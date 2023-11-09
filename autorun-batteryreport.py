@@ -71,14 +71,10 @@ def create_container():
 
 # Generate battery report
 def generate_report():
+    generate_fileName()
+    generate_shellCommand()
     create_container()
     os.system(shellCommand)
 
-generate_fileName()
-generate_shellCommand()
-
-
-print(fileName)
-print(shellCommand)
-
-generate_report()
+if __name__ == "__main__":
+    generate_report()
