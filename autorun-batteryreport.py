@@ -1,7 +1,4 @@
 import os
-import datetime
-
-from pathlib import Path
 
 separator = '-'
 extension = '.html'
@@ -12,12 +9,13 @@ fileName = ''
 subfolder = ''
 fileDirectory = "D:\\battery-report"
 
-report_fullPath = ''
+reportContainer = ''
 shellCommand = ''
 
 
 # Generate file name accordingly to the date and time of report
 def generate_fileName():
+    import datetime
     global fileName, subfolder     # Format: "\YYYY-MM-DD HH-MM.html"
 
     # Extract datetime data
@@ -50,15 +48,30 @@ def generate_fileName():
     temp = int(current_datetime.minute)
     if (temp < 10):
         fileName += '0'
-    fileName += str(temp)
+    fileName += str(temp) + extension
 
 #Generate shell command
 def generate_shellCommand():
-    global shellCommand    
-    fileDirectory_full = ' "' + fileDirectory + subfolder + fileName + '"'
-    shellCommand = baseCommand + fileDirectory_full
+    global shellCommand, reportContainer
 
-def run_shellCommand():
+    # Generate the directory of the subfolder containing the battery report
+    reportContainer = fileDirectory + subfolder
+
+    # Generate the full shell command 
+    report_fullPath = ' "' + reportContainer + fileName + '"'
+    shellCommand = baseCommand + report_fullPath
+
+# Make sure the folder containing the report exists
+def create_container():
+    from pathlib import Path
+
+    container = Path(reportContainer)
+    if not container.is_dir():
+        os.system('mkdir ' + reportContainer)
+
+# Generate battery report
+def generate_report():
+    create_container()
     os.system(shellCommand)
 
 generate_fileName()
@@ -68,4 +81,4 @@ generate_shellCommand()
 print(fileName)
 print(shellCommand)
 
-run_shellCommand()
+generate_report()
