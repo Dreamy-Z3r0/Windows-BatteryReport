@@ -6,22 +6,24 @@ from pathlib import Path
 separator = '-'
 extension = '.html'
 
-baseCommand = "powercfg /batteryreport /output"
+baseCommand = "powercfg /batteryreport /output "
 
-fileName = '\\'
-fileDirectory = "D:\battery-report"
+fileName = ''
+fileDirectory = "D:\\battery-report"
 
+report_fullPath = ''
 shellCommand = ''
+
 
 # Generate file name accordingly to the date and time of report
 def generate_fileName():
-    global fileName     # Format: "YYYY-MM-DD HH-MM.html"
+    global fileName     # Format: "\YYYY-MM-DD HH-MM.html"
 
     # Extract datetime data
     current_datetime = datetime.datetime.now()
 
     # First field: year
-    fileName += str(current_datetime.year) + separator
+    fileName = '\\' + str(current_datetime.year) + separator
 
     # Second field: month
     temp = int(current_datetime.month)
@@ -50,12 +52,17 @@ def generate_fileName():
 #Generate shell command
 def generate_shellCommand():
     global shellCommand    
-    fileDirectory_full = fileDirectory + fileName
-    shellCommand = baseCommand + ' ' + fileDirectory_full
+    fileDirectory_full = ' "' + fileDirectory + fileName + '"'
+    shellCommand = baseCommand + fileDirectory_full
 
 def run_shellCommand():
     os.system(shellCommand)
 
 generate_fileName()
 generate_shellCommand()
+
+
+print(fileName)
+print(shellCommand)
+
 run_shellCommand()
