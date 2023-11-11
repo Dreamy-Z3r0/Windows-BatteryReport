@@ -39,10 +39,11 @@ def generate_fileName():
     subfolder = fileName
 
     # Fourth field: hour
+    fileName += ' '
     temp = int(current_datetime.hour)
     if (temp < 10):
         fileName += '0'
-    fileName += ' ' + str(temp) + separator
+    fileName += str(temp) + separator
 
     # Fifth field: minute
     temp = int(current_datetime.minute)
