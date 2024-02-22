@@ -1,6 +1,11 @@
-# Obtain date time data from an NTP server
+############################################
+# Obtain date time data from an NTP server #
+############################################
 
+# Python package 'ntplib' to query NTP servers
 package = 'ntplib'
+
+# NTP server; all options are found on https://www.ntppool.org/zone/@
 ntp_server = 'vn.pool.ntp.org'
 
 # Attempt to install the ntplib module if it's missing
@@ -16,37 +21,23 @@ def install_missing():
 
 # Fetch date - time data
 def fetch_datetime():
-    from time import ctime
+    from time import strftime, localtime
 
     c = ntplib.NTPClient()
     response = c.request(ntp_server)
-    output = ctime(response.tx_time)
-
-    output = output.split(' ')
-
-    output[0] = output[-1]
-    del output[-1]
-
-    if (1 == len(output[2])):
-        output[2] = '0' + output[2]
-
-    output = ' '.join(output)
+    output = strftime('%Y-%m-%d %H:%M:%S', localtime(response.tx_time))
     print(output)
 
 def main():
+    installation_result = 1
     try:
-        import ntplib
+        __import__(package)
     except ImportError:
-        print("No module named 'ntplib' found. Attempting to install...")
-
-        result = install_missing()
-        if (1 == result):
-            result = 'success'
-        else:
-            result = 'failed'
-
-        print(f'Installation message: {result}\n')
+        # Attempt to install missing 'ntplib' package
+        installation_result = install_missing()
+        
     finally:
+        print(f'Installation message: {installation_result}\n')
         globals()[package] = __import__(package)
         fetch_datetime()
 
