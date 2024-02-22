@@ -1,7 +1,8 @@
 import subprocess
+import update_datetime
 
 # Obtain battery full-charged capacity infomation
-systeminfo = subprocess.run(["Powershell", "-NonInteractive", "-Command", "Get-WmiObject", "-Namespace",  "'root\wmi'", "-Query",  "'select FullChargedCapacity  from BatteryFullChargedCapacity'"], capture_output=True).stdout.decode().strip()
+systeminfo = subprocess.run(["Powershell", "-NonInteractive", "-Command", "Get-WmiObject", "-Namespace",  "'root\\wmi'", "-Query",  "'select FullChargedCapacity  from BatteryFullChargedCapacity'"], capture_output=True).stdout.decode().strip()
 
 # Look for the line containing the battery full-charged capacity
 data_field_index = systeminfo.index('FullChargedCapacity :')
@@ -18,6 +19,9 @@ systeminfo = systeminfo[data_field_index:]
 
 # Convert data from string to int
 fullcharge_capacity = int(systeminfo)
+
+# Print timestamp
+print(update_datetime.update_datetime())
 
 # Print the obtained data
 print(fullcharge_capacity)

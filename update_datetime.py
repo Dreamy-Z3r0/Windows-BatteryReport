@@ -8,8 +8,6 @@ package = 'ntplib'
 # NTP server; all options are found on https://www.ntppool.org/zone/@
 ntpServer = 'vn.pool.ntp.org'
 
-# Output datetime
-outputDatetime = 0
 
 # Attempt to install the ntplib module if it's missing
 def install_missing():
@@ -22,21 +20,25 @@ def install_missing():
     finally:
         return outputCode
 
+
 # Fetch datetime data from NTP server
 def fetch_datetime(controlFlag):
     from time import time, strftime, localtime
 
     response = 0
-
-    if (controlFlag):
+    try:
         c = ntplib.NTPClient()
         response = c.request(ntpServer).tx_time
-    else:
+    except:
+        controlFlag = 0
+    
+    if (0 == controlFlag):
         response = time()
     
-    output = strftime('%Y-%m-%d %H:%M:%S', localtime(response))
-    return output
+    return strftime('%Y-%m-%d %H:%M:%S', localtime(response))
 
+
+# Main function
 def update_datetime():
     installationResult = 1
     try:
@@ -47,9 +49,8 @@ def update_datetime():
     finally:
         if (installationResult):
             globals()[package] = __import__(package)
-        outputDatetime = fetch_datetime(installationResult)
-        print(outputDatetime)
+        return fetch_datetime(installationResult)
 
 
 if __name__ == "__main__":
-    update_datetime()
+    print(update_datetime())
