@@ -5,14 +5,14 @@ ntp_server = 'vn.pool.ntp.org'
 
 # Attempt to install the ntplib module if it's missing
 def install_missing():
-    import os
-    
+    output_code = 1
     try:
+        import os
         os.system('pip install ntplib')
     except:
-        return 0
-    
-    return 1
+        output_code = 0
+    finally:
+        return output_code
 
 # Fetch date - time data
 def fetch_datetime():
@@ -22,7 +22,16 @@ def fetch_datetime():
     response = c.request(ntp_server)
     output = ctime(response.tx_time)
 
-    print(f'Date-time: {output}')
+    output = output.split(' ')
+
+    output[0] = output[-1]
+    del output[-1]
+
+    if (1 == len(output[2])):
+        output[2] = '0' + output[2]
+
+    output = ' '.join(output)
+    print(output)
 
 def main():
     try:
