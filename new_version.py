@@ -1,11 +1,17 @@
 import update_fullChargedCapacity
 import update_datetime
+import handle_log
 
 
-# Print timestamp
+# Obtain timestamp
 timestamp = update_datetime.update_datetime().split(' ')
-print(timestamp)
 
-# Print the obtained data
+# Obtain full-charged capacity
 fullChargedCapacity = update_fullChargedCapacity.update_fullChargedCapacity()
-print(fullChargedCapacity)
+
+# Create a data list
+newData = timestamp
+newData.append(str(fullChargedCapacity) + '\n')
+
+# Write to log file
+handle_log.file_write_field(newData)
