@@ -1,6 +1,6 @@
 import os
 
-logFilename = './Battery-Capacity.csv'
+logFilename = './Monitor_BatteryCapacity.csv'
 logHeaderRow = ['Date', 'Time', 'Full-charged Capacity\n']
 
 
