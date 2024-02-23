@@ -9,7 +9,7 @@ import os
 logHeaderRow_fullchargedCapacity = {
     'date': 'Date',
     'time': 'Time',
-    'full-charged capacity': 'Full-charged Capacity\n'
+    'full-charged capacity': 'Full-charged Capacity'
 }
 
 
@@ -74,10 +74,7 @@ def file_write_field(fileFullPath, dictInput):
             if (1 == logFilename):
                 file_newLine.append(dictInput['date'])
                 file_newLine.append(dictInput['time'])
-                try:
-                    file_newLine.append(str(dictInput['full-charged capacity']) + '\n')
-                except:
-                    file_newLine.append(dictInput['full-charged capacity'])
+                file_newLine.append(str(dictInput['full-charged capacity']) + '\n')
 
             file_newLine = ','.join(file_newLine)
             f = open(fileFullPath, 'a')
