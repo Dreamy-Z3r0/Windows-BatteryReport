@@ -6,7 +6,11 @@ import os
 ###############################
 
 # Full-charged capacity log file
-logHeaderRow_fullchargedCapacity = ['Date', 'Time', 'Full-charged Capacity\n']
+logHeaderRow_fullchargedCapacity = {
+    'date': 'Date',
+    'time': 'Time',
+    'full-charged capacity': 'Full-charged Capacity\n'
+}
 
 
 
@@ -50,7 +54,7 @@ def file_check(fileFullPath):
 
 
 # Main function: write to file
-def file_write_field(fileFullPath, listInput):
+def file_write_field(fileFullPath, dictInput):
     try:
         # Analyse log filename
         logFilename = analyse_dir(fileFullPath)
@@ -61,17 +65,26 @@ def file_write_field(fileFullPath, listInput):
         else:
             raise Exception(f"Error: Invalid log name: {logFilename}")
 
-        if (isinstance(listInput, list)):
+        if (isinstance(dictInput, dict)):
             if not(file_check(fileFullPath)):
                 if (1 == logFilename):
                     file_write_field(fileFullPath, logHeaderRow_fullchargedCapacity)
 
-            file_newLine = ','.join(listInput)
+            file_newLine = []
+            if (1 == logFilename):
+                file_newLine.append(dictInput['date'])
+                file_newLine.append(dictInput['time'])
+                try:
+                    file_newLine.append(str(dictInput['full-charged capacity']) + '\n')
+                except:
+                    file_newLine.append(dictInput['full-charged capacity'])
+
+            file_newLine = ','.join(file_newLine)
             f = open(fileFullPath, 'a')
             f.write(file_newLine)
             f.close()
         else:
-            raise Exception(f"Error: Expected <class 'list'> input.\n\t'{listInput}' is of {type(listInput)}.")
+            raise Exception(f"Error: Expected <class 'dict'> input.\n\t'{dictInput}' is of {type(dictInput)}.")
     except Exception as error_msg:
         print(error_msg)
 
