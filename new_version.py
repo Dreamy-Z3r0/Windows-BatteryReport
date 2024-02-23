@@ -2,6 +2,11 @@ import Battery_FullChargedCapacity.update_fullChargedCapacity as update_fullChar
 import Battery_FullChargedCapacity.update_datetime as update_datetime
 import handle_log
 
+logContainer = '.'
+logFilename = 'Monitor - Battery Full-charged Capacity.csv'
+
+logFilename_fullpath = logContainer + '\\' + logFilename
+
 
 def main_process():
     # Obtain timestamp
@@ -15,7 +20,7 @@ def main_process():
     newData.append(str(fullChargedCapacity) + '\n')
 
     # Write to log file
-    handle_log.file_write_field(newData)
+    handle_log.file_write_field(logFilename_fullpath, newData)
 
 
 if __name__ == '__main__':
