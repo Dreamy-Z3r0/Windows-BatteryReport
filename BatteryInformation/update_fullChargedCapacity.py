@@ -1,6 +1,6 @@
 import subprocess
 
-
+# Obtain the full-charged capacity
 def update_fullChargedCapacity():
     # Obtain battery full-charged capacity infomation
     systeminfo = subprocess.run(["Powershell", "-NonInteractive", "-Command", "Get-WmiObject", "-Namespace",  "'root\\wmi'", "-Query",  "'select FullChargedCapacity  from BatteryFullChargedCapacity'"], capture_output=True).stdout.decode().strip()
@@ -23,6 +23,10 @@ def update_fullChargedCapacity():
 
     # Return full charged capacity value
     return fullChargedCapacity
+
+# Assess battery health
+def remaining_batteryHealth(designedCapacity, fullChargedCapacity):
+    return format(fullChargedCapacity / designedCapacity * 100, '.2f')
 
 
 if __name__ == '__main__':

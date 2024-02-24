@@ -5,11 +5,19 @@ import os
 # Define types of log headers #
 ###############################
 
-# Full-charged capacity log file
-logHeaderRow_fullchargedCapacity = {
+# Battery information log file
+logHeaderRow_batteryInformation = {
     'date': 'Date',
     'time': 'Time',
-    'full-charged capacity': 'Full-charged Capacity'
+    'unique id': 'Battery Unique ID',
+    'voltage': 'Battery Voltage (V)',
+    'mode of operation': 'Mode of Operation',
+    'charge rate': 'Charge Rate (mWh/h)',
+    'discharge rate': 'Discharge Rate (mWh/h)',
+    'designed capacity': 'Designed Capacity (mWh)',
+    'full-charged capacity': 'Full-charged Capacity (mWh)',
+    'remaining capacity': 'Remaining Capacity (%)',
+    'battery health': 'Battery Health (%)'
 }
 
 
@@ -60,7 +68,7 @@ def file_write_field(fileFullPath, dictInput):
         logFilename = analyse_dir(fileFullPath)
         logFilename = logFilename[-1]
 
-        if ('Monitor - Battery Full-charged Capacity.csv' == logFilename):
+        if ('Monitor - Battery Information.csv' == logFilename):
             logFilename = 1
         else:
             raise Exception(f"Error: Invalid log name: {logFilename}")
@@ -68,13 +76,21 @@ def file_write_field(fileFullPath, dictInput):
         if (isinstance(dictInput, dict)):
             if not(file_check(fileFullPath)):
                 if (1 == logFilename):
-                    file_write_field(fileFullPath, logHeaderRow_fullchargedCapacity)
+                    file_write_field(fileFullPath, logHeaderRow_batteryInformation)
 
             file_newLine = []
             if (1 == logFilename):
                 file_newLine.append(dictInput['date'])
                 file_newLine.append(dictInput['time'])
-                file_newLine.append(str(dictInput['full-charged capacity']) + '\n')
+                file_newLine.append(dictInput['unique id'])
+                file_newLine.append(str(dictInput['designed capacity']))
+                file_newLine.append(str(dictInput['voltage']))
+                file_newLine.append(dictInput['mode of operation'])
+                file_newLine.append(str(dictInput['charge rate']))
+                file_newLine.append(str(dictInput['discharge rate']))
+                file_newLine.append(str(dictInput['full-charged capacity']))
+                file_newLine.append(str(dictInput['remaining capacity']))
+                file_newLine.append(str(dictInput['battery health']) + '\n')
 
             file_newLine = ','.join(file_newLine)
             f = open(fileFullPath, 'a')
