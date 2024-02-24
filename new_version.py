@@ -9,15 +9,17 @@ logFilename_fullpath = logContainer + '\\' + logFilename
 
 
 def main_process():
+    # Create a data list as dictionary
+    newData = {}
+
     # Obtain timestamp
     timestamp = update_datetime.update_datetime().split(' ')
+    newData.update({'date': timestamp[0]})
+    newData.update({'time': timestamp[1]})
 
     # Obtain full-charged capacity
     fullChargedCapacity = update_fullChargedCapacity.update_fullChargedCapacity()
-
-    # Create a data list
-    newData = timestamp
-    newData.append(str(fullChargedCapacity) + '\n')
+    newData.update({'full-charged capacity': fullChargedCapacity})
 
     # Write to log file
     handle_log.file_write_field(logFilename_fullpath, newData)
