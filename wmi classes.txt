@@ -1,0 +1,1592 @@
+CIM_Indication                      {}                   {CorrelatedIndications, IndicationFilterName, IndicationIde...
+CIM_ClassIndication                 {}                   {ClassDefinition, CorrelatedIndications, IndicationFilterNa...
+CIM_ClassDeletion                   {}                   {ClassDefinition, CorrelatedIndications, IndicationFilterNa...
+CIM_ClassCreation                   {}                   {ClassDefinition, CorrelatedIndications, IndicationFilterNa...
+CIM_ClassModification               {}                   {ClassDefinition, CorrelatedIndications, IndicationFilterNa...
+CIM_InstIndication                  {}                   {CorrelatedIndications, IndicationFilterName, IndicationIde...
+CIM_InstCreation                    {}                   {CorrelatedIndications, IndicationFilterName, IndicationIde...
+CIM_InstModification                {}                   {CorrelatedIndications, IndicationFilterName, IndicationIde...
+CIM_InstDeletion                    {}                   {CorrelatedIndications, IndicationFilterName, IndicationIde...
+__NotifyStatus                      {}                   {StatusCode}
+__ExtendedStatus                    {}                   {Description, Operation, ParameterInfo, ProviderName...}
+Win32_PrivilegesStatus              {}                   {Description, Operation, ParameterInfo, PrivilegesNotHeld...}
+CIM_Error                           {}                   {CIMStatusCode, CIMStatusCodeDescription, ErrorSource, Erro...
+MSFT_WmiError                       {}                   {CIMStatusCode, CIMStatusCodeDescription, error_Category, e...
+MSFT_ExtendedStatus                 {}                   {CIMStatusCode, CIMStatusCodeDescription, error_Category, e...
+__SecurityRelatedClass              {}                   {}
+__Trustee                           {}                   {Domain, Name, SID, SidLength...}
+__NTLMUser9X                        {}                   {Authority, Flags, Mask, Name...}
+__ACE                               {}                   {AccessMask, AceFlags, AceType, GuidInheritedObjectType...}
+__SecurityDescriptor                {}                   {ControlFlags, DACL, Group, Owner...}
+__PARAMETERS                        {}                   {}
+__SystemClass                       {}                   {}
+__ProviderRegistration              {}                   {provider}
+__EventProviderRegistration         {}                   {EventQueryList, provider}
+__ObjectProviderRegistration        {}                   {InteractionType, provider, QuerySupportLevels, SupportsBat...
+__ClassProviderRegistration         {}                   {CacheRefreshInterval, InteractionType, PerUserSchema, prov...
+__InstanceProviderRegistration      {}                   {InteractionType, provider, QuerySupportLevels, SupportsBat...
+__MethodProviderRegistration        {}                   {provider}
+__PropertyProviderRegistration      {}                   {provider, SupportsGet, SupportsPut}
+__EventConsumerProviderRegistration {}                   {ConsumerClassNames, provider}
+__thisNAMESPACE                     {}                   {SECURITY_DESCRIPTOR}
+__NAMESPACE                         {}                   {Name}
+__IndicationRelated                 {}                   {}
+__FilterToConsumerBinding           {}                   {Consumer, CreatorSID, DeliverSynchronously, DeliveryQoS...}
+__EventConsumer                     {}                   {CreatorSID, MachineName, MaximumQueueSize}
+__AggregateEvent                    {}                   {NumberOfEvents, Representative}
+__TimerNextFiring                   {}                   {NextEvent64BitTime, TimerId}
+__EventFilter                       {}                   {CreatorSID, EventAccess, EventNamespace, Name...}
+__Event                             {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+__NamespaceOperationEvent           {}                   {SECURITY_DESCRIPTOR, TargetNamespace, TIME_CREATED}
+__NamespaceModificationEvent        {}                   {PreviousNamespace, SECURITY_DESCRIPTOR, TargetNamespace, T...
+__NamespaceDeletionEvent            {}                   {SECURITY_DESCRIPTOR, TargetNamespace, TIME_CREATED}
+__NamespaceCreationEvent            {}                   {SECURITY_DESCRIPTOR, TargetNamespace, TIME_CREATED}
+__ClassOperationEvent               {}                   {SECURITY_DESCRIPTOR, TargetClass, TIME_CREATED}
+__ClassDeletionEvent                {}                   {SECURITY_DESCRIPTOR, TargetClass, TIME_CREATED}
+__ClassModificationEvent            {}                   {PreviousClass, SECURITY_DESCRIPTOR, TargetClass, TIME_CREA...
+__ClassCreationEvent                {}                   {SECURITY_DESCRIPTOR, TargetClass, TIME_CREATED}
+__InstanceOperationEvent            {}                   {SECURITY_DESCRIPTOR, TargetInstance, TIME_CREATED}
+__InstanceCreationEvent             {}                   {SECURITY_DESCRIPTOR, TargetInstance, TIME_CREATED}
+__MethodInvocationEvent             {}                   {Method, Parameters, PreCall, SECURITY_DESCRIPTOR...}
+__InstanceModificationEvent         {}                   {PreviousInstance, SECURITY_DESCRIPTOR, TargetInstance, TIM...
+__InstanceDeletionEvent             {}                   {SECURITY_DESCRIPTOR, TargetInstance, TIME_CREATED}
+__TimerEvent                        {}                   {NumFirings, SECURITY_DESCRIPTOR, TIME_CREATED, TimerId}
+__ExtrinsicEvent                    {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+__SystemEvent                       {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+__EventDroppedEvent                 {}                   {Event, IntendedConsumer, SECURITY_DESCRIPTOR, TIME_CREATED}
+__EventQueueOverflowEvent           {}                   {CurrentQueueSize, Event, IntendedConsumer, SECURITY_DESCRI...
+__QOSFailureEvent                   {}                   {ErrorCode, ErrorDescription, Event, IntendedConsumer...}
+__ConsumerFailureEvent              {}                   {ErrorCode, ErrorDescription, ErrorObject, Event...}
+MSiSCSI_Eventlog                    {}                   {Active, AdditionalData, InstanceName, LogToEventlog...}
+WMIEvent                            {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+MSNdis_StatusMediaConnect           {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+MSNdis_StatusResetEnd               {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+MSNdis_NotifyAdapterArrival         {}                   {Active, DeviceName, InstanceName, SECURITY_DESCRIPTOR...}
+MSMCAInfo_RawCorrectedPlatformEvent {}                   {Active, Count, InstanceName, Records...}
+KernelIdleStateChange               {}                   {Active, InstanceName, NewState, OldState...}
+MSNdis_StatusDot11ConnectionComp... {}                   {Active, InstanceName, NdisStatusDot11ConnectionCompletionI...
+MSMCAEvent_MemoryError              {}                   {Active, AdditionalErrors, BUS_SPECIFIC_DATA, Cpu...}
+MSMCAEvent_PCIBusError              {}                   {Active, AdditionalErrors, Cpu, ErrorSeverity...}
+ProcessorCStateEvent                {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+KernelPerfStateDomainChange         {}                   {Active, InstanceName, Latency, Processors...}
+MSNdis_StatusDot11PhyStateChange    {}                   {Active, InstanceName, NdisStatusDot11PhyStateChangeIndicat...
+MSNdis_StatusResetStart             {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+WmiMonitorBrightnessEvent           {}                   {Active, Brightness, InstanceName, SECURITY_DESCRIPTOR...}
+MSNdis_StatusDot11RoamingStart      {}                   {Active, InstanceName, NdisStatusDot11RoamingStartIndicatio...
+MSNdis_StatusPortState              {}                   {Active, InstanceName, NdisPortStateStatusIndication, Numbe...
+MSFC_LinkEvent                      {}                   {Active, AdapterWWN, EventType, InstanceName...}
+MSMCAEvent_SwitchToCPEPolling       {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+MSMCAEvent_TLBError                 {}                   {Active, AdditionalErrors, Address, Cpu...}
+MSFC_AdapterEvent                   {}                   {Active, EventType, InstanceName, PortWWN...}
+MSFC_TargetEvent                    {}                   {Active, DiscoveredPortWWN, EventType, InstanceName...}
+MSBatteryClassEvent                 {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+BatteryStatusChange                 {}                   {Active, Charging, Critical, Discharging...}
+BatteryTagChange                    {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, Tag...}
+MSMCAEvent_BusError                 {}                   {Active, AdditionalErrors, Address, Cpu...}
+MSMCAEvent_PlatformSpecificError    {}                   {Active, AdditionalErrors, Cpu, ErrorSeverity...}
+IdleAccountingEx                    {}                   {Active, InstanceName, ResetCount, SECURITY_DESCRIPTOR...}
+MSNdis_StatusDot11RoamingCompletion {}                   {Active, InstanceName, NdisStatusDot11RoamingCompletionIndi...
+MS_SM_AdapterEvent                  {}                   {Active, EventType, InstanceName, PortWWN...}
+MSNdis_StatusDot11PmkidCandidate... {}                   {Active, InstanceName, NdisStatusDot11PmkidCandidateListInd...
+MSNdis_StatusDot11AssociationCom... {}                   {Active, InstanceName, NdisStatusDot11AssociationCompletion...
+MSNdis_StatusDot11ScanConfirm       {}                   {Active, InstanceName, NdisStatusDot11ScanConfirmIndication...
+MSNdis_StatusDot11ConnectionStart   {}                   {Active, InstanceName, NdisStatusDot11ConnectionStartIndica...
+MSNdis_StatusDevicePowerOn          {}                   {Active, Device, InstanceName, SECURITY_DESCRIPTOR...}
+MSNdis_StatusTaskOffloadChange      {}                   {Active, InstanceName, NumberElements, SECURITY_DESCRIPTOR...}
+MSNdis_StatusProtocolBind           {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED...}
+MSNdis_StatusProtocolUnbind         {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED...}
+MSNdis_StatusLinkState              {}                   {Active, InstanceName, NdisLinkStateStatusIndication, Numbe...
+MSNdis_StatusDot11TkipmicFailure    {}                   {Active, InstanceName, NdisStatusDot11TkipmicFailureIndicat...
+MSMCAEvent_SMBIOSError              {}                   {Active, AdditionalErrors, Cpu, ErrorSeverity...}
+MSMCAEvent_InvalidError             {}                   {Active, AdditionalErrors, Cpu, ErrorSeverity...}
+MSNdis_NotifyAdapterRemoval         {}                   {Active, DeviceName, InstanceName, SECURITY_DESCRIPTOR...}
+MSMCAEvent_CPUError                 {}                   {Active, AdditionalErrors, BusSev, BusType...}
+MSMCAInfo_RawCMCEvent               {}                   {Active, Count, InstanceName, Records...}
+MS_SM_PortEvent                     {}                   {Active, EventType, FabricPortId, InstanceName...}
+MSNdis_StatusDevicePowerOff         {}                   {Active, Device, InstanceName, SECURITY_DESCRIPTOR...}
+MSNdis_StatusExternalConnectivit... {}                   {Active, InstanceName, NdisMediaConnectStatus, SECURITY_DES...
+MSNdis_StatusDot11MPDUMaxLengthC... {}                   {Active, InstanceName, NdisStatusDot11MPDUMaxLengthChangeIn...
+MSNdis_NotifyVcRemoval              {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+ProcessorPerfStateEvent             {}                   {Active, HighestState, InstanceName, SECURITY_DESCRIPTOR...}
+MSTapeDriveProblemEvent             {}                   {Active, DriveProblemType, InstanceName, SECURITY_DESCRIPTO...
+MSNdis_StatusDot11Disassociation    {}                   {Active, InstanceName, NdisStatusDot11DisassociationIndicat...
+MSNdis_StatusPacketFilterChange     {}                   {Active, InstanceName, NdisPacketFilterStatusIndication, Nu...
+KernelThermalPolicyChange           {}                   {Active, CoolingMode, InstanceName, Processors...}
+MSNdis_StatusNetworkChange          {}                   {Active, InstanceName, NdisNetworkChangeStatusIndication, N...
+MSMCAEvent_MemoryHierarchyError     {}                   {Active, AdditionalErrors, Address, Cpu...}
+MS_SM_TargetEvent                   {}                   {Active, DiscoveredPortWWN, DomainPortWWN, EventType...}
+MSNdis_StatusDevicePowerOnEx        {}                   {Active, Device, InstanceName, SECURITY_DESCRIPTOR...}
+MSNdis_NotifyFilterRemoval          {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+MSNdis_StatusOperationalStatus      {}                   {Active, InstanceName, NdisOperationalStatusStatusIndicatio...
+MSNdis_StatusMediaSpecificIndica... {}                   {Active, InstanceName, NdisStatusMediaSpecificIndication, N...
+MSMCAEvent_SystemEventError         {}                   {Active, AdditionalErrors, Cpu, ErrorSeverity...}
+MSNdis_StatusDot11LinkQuality       {}                   {Active, InstanceName, NdisStatusDot11LinkQualityIndication...
+MSMCAInfo_RawMCAEvent               {}                   {Active, Count, InstanceName, Records...}
+ProcessorThrottleStateEvent         {}                   {Active, HighestState, InstanceName, SECURITY_DESCRIPTOR...}
+IdleAccounting                      {}                   {Active, InstanceName, ResetCount, SECURITY_DESCRIPTOR...}
+MSFC_PortEvent                      {}                   {Active, EventType, FabricPortId, InstanceName...}
+MSMCAEvent_PCIComponentError        {}                   {Active, AdditionalErrors, Cpu, ErrorSeverity...}
+MSNdis_StatusHDSplitCurrentConfig   {}                   {Active, HDSplitCurrentConfig, InstanceName, NumberElements...
+MSMCAEvent_MemoryPageRemoved        {}                   {Active, InstanceName, PhysicalAddress, SECURITY_DESCRIPTOR...
+HDAudioBusEvent                     {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+HDAudioBus_Enum                     {}                   {Active, InstanceName, NewDeviceState, OldDeviceState...}
+HDAudBus_DMA                        {}                   {Active, InstanceName, NewDeviceState, OldDeviceState...}
+MSNdis_StatusDot11AssociationStart  {}                   {Active, InstanceName, NdisStatusDot11AssociationStartIndic...
+MSNdis_StatusLinkSpeedChange        {}                   {Active, InstanceName, NdisStatusLinkSpeedChange, SECURITY_...
+KernelPerfStateChange               {}                   {Active, InstanceName, Latency, Processor...}
+MSNdis_NotifyVcArrival              {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+MSStorageDriver_FailurePredictEvent {}                   {Active, InstanceName, Length, SECURITY_DESCRIPTOR...}
+PortClsEvent                        {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+PortCls_AudioEngine                 {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+PortCls_PowerState                  {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+PortCls_SubDevice                   {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+PortCls_Position                    {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+PortCls_PinState                    {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+PortCls_IrpProcessing               {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+PortCls_PowerPolicy                 {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+PortCls_ServiceGroup                {}                   {SECURITY_DESCRIPTOR, TIME_CREATED}
+MSNdis_StatusMediaSpecificIndica... {}                   {Active, InstanceName, NdisStatusMediaSpecificIndication, N...
+KernelThermalConstraintChange       {}                   {Active, InstanceName, Processors, SECURITY_DESCRIPTOR...}
+MSWmi_GuidRegistrationInfo          {}                   {Active, GuidCount, GuidList, InstanceName...}
+MSMCAEvent_SwitchToCMCPolling       {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+MSChangerProblemEvent               {}                   {Active, ChangerData, ChangerProblemType, InstanceName...}
+MSNdis_StatusDevicePowerOffEx       {}                   {Active, Device, InstanceName, SECURITY_DESCRIPTOR...}
+MSNdis_NotifyFilterArrival          {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+MSNdis_StatusMediaDisconnect        {}                   {Active, InstanceName, SECURITY_DESCRIPTOR, TIME_CREATED}
+MSiSCSI_InitiatorNodeFailureEvent   {}                   {Active, FailureTime, FailureType, InstanceName...}
+MSiSCSI_InitiatorInstanceFailure... {}                   {Active, FailureType, InstanceName, RemoteNodeName...}
+__EventGenerator                    {}                   {}
+__TimerInstruction                  {}                   {SkipIfPassed, TimerId}
+__AbsoluteTimerInstruction          {}                   {EventDateTime, SkipIfPassed, TimerId}
+__IntervalTimerInstruction          {}                   {IntervalBetweenEvents, SkipIfPassed, TimerId}
+__Provider                          {}                   {Name}
+__Win32Provider                     {}                   {ClientLoadableCLSID, CLSID, Concurrency, DefaultMachineNam...
+__SystemSecurity                    {GetSD, GetSecuri... {}
+IdleStateAccountingEx               {}                   {FailedTransitions, IdleTimeBuckets, IdleTransitions, Inval...
+MSiSCSI_PortalInfoClass             {}                   {Active, InstanceName, PortalInfoCount, PortalInformation}
+ToshibaBiosElement                  {}                   {}
+QueryBiosSettings                   {}                   {Active, CurrentSetting, InstanceName}
+SecurityPolicy                      {GetSecurityPolic... {Active, InstanceName}
+QueryTosIfVersion                   {}                   {Active, CurrentVersion, InstanceName}
+ModeControl                         {SetConfiguration... {Active, InstanceName}
+BiosSetting                         {GetBiosSetting, ... {Active, InstanceName}
+QueryBiosSettingsParameter          {}                   {Active, InstanceName, ItemInformation}
+QueryBiosItems                      {}                   {Active, InstanceName, ItemName}
+QuerySecurityPolicyItems            {}                   {Active, InstanceName, ItemName}
+Password                            {GetPasswordStatu... {Active, InstanceName}
+QuerySmbiosItems                    {}                   {Active, InstanceName, ItemName}
+QuerySmbiosStrings                  {}                   {Active, CurrentString, InstanceName}
+QuerySecurityPoliciesParameter      {}                   {Active, InstanceName, ItemInformation}
+QueryPasswordStatus                 {}                   {Active, InstanceName, PasswordStatus}
+QuerySecurityPolicies               {}                   {Active, CurrentSetting, InstanceName}
+QueryPasswordItems                  {}                   {Active, InstanceName, PasswordItems}
+SmbiosString                        {GetSmbiosString,... {Active, InstanceName}
+ProcessorAcpiCsdDependency          {}                   {CoordType, Domain, Index, NumberOfEntries...}
+MSFC_FibrePortNPIVMethods           {CreateVirtualPor... {Active, InstanceName}
+AcpiGenAddr                         {}                   {Address, AddressSpaceID, BitOffset, BitWidth...}
+MSMCAInfo                           {}                   {}
+MSMCAInfo_RawMCAData                {}                   {Active, Count, InstanceName, Records}
+MSMCAInfo_Entry                     {}                   {Data, Length}
+MSAgp                               {}                   {}
+MSAgp_Information                   {}                   {Active, AgpCommand, AgpStatus, ApertureBase...}
+MSRedbook_DriverInformation         {}                   {Active, CDDAAccurate, CDDASupported, InstanceName...}
+MSFC_HBAPortAttributesResults       {}                   {FabricName, NodeWWN, NumberofDiscoveredPorts, PortActiveFc...
+MSIde                               {}                   {}
+MSIde_PortDeviceInfo                {}                   {Active, Bus, InstanceName, Lun...}
+ISCSI_IP_Address                    {}                   {IpV4Address, IpV6Address, IpV6FlowInfo, IpV6ScopeId...}
+MSiSCSI_LB_Operations               {SetLoadBalancePo... {Active, InstanceName}
+MSiSCSIInitiator_LUNList            {}                   {OSLunNumber, TargetLun}
+HDAudioControllerErrorStatus        {}                   {CorbMemoryError, RirbFifoOverrun}
+MS_SMHBA_PORTLUN                    {}                   {domainPortWWN, PortWWN, TargetLun}
+MSiSCSI_NICConfig                   {}                   {Active, InstanceName, LinkSpeed, LinkState...}
+MSDiskDriver                        {}                   {}
+MSDiskDriver_Performance            {}                   {Active, DeviceName, InstanceName, PerfData}
+MSDiskDriver_PerformanceData        {}                   {BytesRead, BytesWritten, IdleTime, QueryTime...}
+MSDiskDriver_Geometry               {}                   {Active, BytesPerSector, Cylinders, InstanceName...}
+HDAudioDmaEngineErrorStatus         {}                   {DescriptorError, FifoError}
+MS_SMHBA_SAS_Port                   {}                   {AttachedSASAddress, LocalSASAddress, NumberofDiscoveredPor...
+MSiSCSI_HBAInformation              {}                   {Active, AsicVersion, BiDiScsiCommands, CacheValid...}
+MSFC_TM                             {}                   {tm_hour, tm_isdst, tm_mday, tm_min...}
+MSKernelPpmClass                    {}                   {}
+KernelPerfStates                    {}                   {Active, BusyAdjThreshold, Count, CurrentState...}
+KernelIdleStates                    {}                   {Active, Count, InstanceName, OldState...}
+IdleStateBucketEx                   {}                   {Count, MaxTimeUs, MinTimeUs, TotalTimeUs}
+MSiSCSI_InitiatorSessionInfo        {}                   {Active, InstanceName, SessionCount, SessionsList...}
+MSiSCSIInitiator_TargetMappings     {}                   {InitiatorName, LUNList, OSBusNumber, OSDeviceName...}
+MSChangerDriver                     {}                   {}
+MSChangerParameters                 {}                   {Active, InstanceName, MagazineSize, NumberOfCleanerSlots...}
+MSChangerProblemDeviceError         {}                   {Active, ChangerProblemType, InstanceName}
+MSAcpiInfo                          {}                   {Active, BootArchitecture, Capabilities, InstanceName...}
+ISCSI_RedirectPortalInfo            {}                   {OriginalIPAddr, OriginalPort, Redirected, RedirectedIPAddr...
+MSiSCSIInitiator_DeviceOnSession    {}                   {DeviceInterfaceGuid, DeviceInterfaceName, DeviceNumber, De...
+HBAFCPScsiEntry                     {}                   {FCPId, Luid, ScsiId}
+ISCSI_TargetPortalGroup             {}                   {PortalCount, Portals}
+KernelPerfState                     {}                   {Control, DecreaseLevel, DecreaseTime, Frequency...}
+MSMCAEvent_Header                   {}                   {AdditionalErrors, Cpu, ErrorSeverity, LogToEventlog...}
+ISCSI_TargetMapping                 {}                   {FromPersistentLogin, LUNCount, LUNList, OSBus...}
+MSFC_EventControl                   {AddTarget, Remov... {Active, InstanceName}
+BcdStore                            {OpenStore, Impor... {FilePath}
+MS_SM_FabricAndDomainManagementM... {SM_SendTEST, SM_... {Active, InstanceName}
+HBAFC3MgmtInfo                      {}                   {IPAddress, IPVersion, NumberOfAttachedNodes, PortId...}
+HBAFCPBindingEntry                  {}                   {FCPId, ScsiId, Type}
+BcdElement                          {}                   {ObjectId, StoreFilePath, Type}
+BcdObjectElement                    {}                   {Id, ObjectId, StoreFilePath, Type}
+BcdDeviceElement                    {}                   {Device, ObjectId, StoreFilePath, Type}
+BcdUnknownElement                   {}                   {ActualType, ObjectId, StoreFilePath, Type}
+BcdStringElement                    {}                   {ObjectId, StoreFilePath, String, Type}
+BcdBooleanElement                   {}                   {Boolean, ObjectId, StoreFilePath, Type}
+BcdIntegerElement                   {}                   {Integer, ObjectId, StoreFilePath, Type}
+BcdObjectListElement                {}                   {Ids, ObjectId, StoreFilePath, Type}
+BcdIntegerListElement               {}                   {Integers, ObjectId, StoreFilePath, Type}
+MSProcessorClass                    {}                   {}
+ProcessorBiosInfo                   {}                   {Active, ApicId, InstanceName, NtNumber...}
+ProcessorBiosTStates                {}                   {Active, FadtDutyOffset, FadtDutyWidth, InstanceName...}
+ProcessorStatus                     {}                   {Active, CurrentPerfState, InstanceName, LastRequestedThrot...
+ProcessorAcpiCsd                    {}                   {Active, Count, Dependency, InstanceName}
+ProcessorAcpiTsd                    {}                   {Active, Count, Dependency, InstanceName}
+ProcessorBiosCStates                {}                   {Active, Cst, CStateVersionInUse, FadtC2Latency...}
+WDMClassesOfDriver                  {}                   {ClassName, Driver, HighDateTime, LowDateTime}
+MSiSCSIInitiator_IKEPresharedKey... {}                   {AuthMethod, Id, IdType, key...}
+IdleStateAccounting                 {}                   {FailedTransitions, IdleTimeBuckets, IdleTransitions, Inval...
+MSFC_NPIVCapabilities               {}                   {Active, DhChapAvailableOnPhysicalPort, DhChapAvailableOnVi...
+ProcessorAcpiCst                    {}                   {Count, State}
+MSiSCSI_RedirectPortalInfoClass     {}                   {Active, InstanceName, RedirectSessionList, SessionCount...}
+PerformanceState                    {}                   {Flags, Frequency, PercentFrequency}
+MSPower                             {}                   {}
+MSPower_DeviceWakeEnable            {}                   {Active, Enable, InstanceName}
+MSPower_DeviceEnable                {}                   {Active, Enable, InstanceName}
+ISCSI_LoginOptions                  {}                   {AuthType, DataDigest, DefaultTime2Retain, DefaultTime2Wait...
+MSFC_EventBuffer                    {}                   {EventInfo, EventType}
+MS_SM_PortInformationMethods        {SM_GetPortType, ... {Active, InstanceName}
+MSiSCSI_TCPIPConfig                 {}                   {Active, AlternateDNSServer, DefaultGateway, EnableDHCP...}
+MSiSCSIInitiator_PersistentDevices  {}                   {DevicePath}
+MSiSCSI_BootConfiguration           {}                   {Active, DiscoverBootDevice, InitiatorNode, InstanceName...}
+MS_SM_HbaApiVersion                 {}                   {Description, HbaApiVersion, WmiHbaApiVersion}
+MSMouse                             {}                   {}
+MSMouse_ClassInformation            {}                   {Active, DeviceId, InstanceName}
+MSMouse_PortInformation             {}                   {Active, Buttons, ConnectorType, DataQueueSize...}
+MSStorageDriver_ScsiRequestBlock    {}                   {cdb, cdbLength, dataBuffer, dataTransferLength...}
+MSRedbook_Performance               {}                   {Active, DataProcessed, InstanceName, StreamPausedCount...}
+AcpiControlStatus                   {}                   {Control, Status}
+MSDeviceUI                          {}                   {}
+MSDeviceUI_FirmwareRevision         {}                   {Active, FirmwareRevision, InstanceName}
+MSSerial                            {}                   {}
+MSSerial_PerformanceInformation     {}                   {Active, BufferOverrunErrorCount, FrameErrorCount, Instance...
+MSSerial_PortName                   {}                   {Active, InstanceName, PortName}
+MSSerial_CommInfo                   {}                   {Active, BaudRate, BitsPerByte, InstanceName...}
+MSSerial_HardwareConfiguration      {}                   {Active, BaseIOAddress, InstanceName, InterruptType...}
+MSSerial_CommProperties             {}                   {Active, dwCurrentRxQueue, dwCurrentTxQueue, dwMaxBaud...}
+MS_SMHBA_SCSIENTRY                  {}                   {LUID, PortLun, ScsiId}
+MSiSCSIInitiator_MethodClass        {RefreshTargetLis... {iSCSINodeName}
+MSKeyboard                          {}                   {}
+MSKeyboard_ExtendedID               {}                   {Active, InstanceName, Subtype, Type}
+MSKeyboard_PortInformation          {}                   {Active, ConnectorType, DataQueueSize, ErrorCount...}
+MSKeyboard_ClassInformation         {}                   {Active, DeviceId, InstanceName}
+MSFC_HBAFCPInfo                     {GetFcpTargetMapp... {Active, InstanceName}
+MSiSCSI_DiscoveryConfig             {}                   {Active, AutomaticiSNSDiscovery, InitiatorName, InstanceNam...
+MSFC_VirtualFibrePortAttributes     {}                   {FabricWWN, FCId, Status, Tag...}
+FrequencyRangeDescriptor            {}                   {ActiveHeight, ActiveWidth, ConstraintType, MaxHSyncDenomin...
+WmiFWVersion                        {}                   {build, hotfix, major, minor...}
+ProcessorAcpiXpss                   {}                   {Active, Count, InstanceName, State}
+MS_SM_AdapterInformationQuery       {}                   {Active, DriverName, DriverVersion, FirmwareVersion...}
+MSStorageDriver_ClassErrorLogEntry  {}                   {errorPaging, errorReserved, errorRetried, errorUnhandled...}
+ISCSI_RedirectSessionInfo           {}                   {ConnectionCount, RedirectPortalList, TargetPortalGroupTag,...
+MSiSCSIInitiator_iSNSServerClass    {Refresh}            {iSNSServerAddress}
+MSTapeDriver                        {}                   {}
+MSTapeDriveParam                    {}                   {Active, CompressionCapable, CompressionEnabled, DefaultBlo...
+MSTapeSymbolicName                  {}                   {Active, InstanceName, TapeSymbolicName}
+MSTapeMediaCapacity                 {}                   {Active, AvailableCapacity, BlockSize, InstanceName...}
+MSTapeProblemDeviceError            {}                   {Active, DriveHardwareError, DriveRequiresCleaning, HardErr...
+MSTapeProblemIoError                {}                   {Active, InstanceName, NonMediumErrors, ReadCorrectedWithDe...
+MSFC_HBAAdapterMethods              {GetDiscoveredPor... {Active, InstanceName}
+ISCSI_PortalInfo                    {}                   {Index, IPAddr, Port, PortalTag...}
+MSStorageDriver                     {}                   {}
+MSStorageDriver_FailurePredictFu... {AllowPerformance... {Active, InstanceName}
+MSStorageDriver_FailurePredictData  {}                   {Active, InstanceName, Length, VendorSpecific}
+MSStorageDriver_ScsiInfoExceptions  {}                   {Active, Flags, InstanceName, IntervalTimer...}
+MSStorageDriver_ATAPISmartData      {}                   {Active, Checksum, ErrorLogCapability, ExtendedPollTimeInMi...
+MSStorageDriver_FailurePredictTh... {}                   {Active, InstanceName, VendorSpecific}
+MSStorageDriver_FailurePredictSt... {}                   {Active, InstanceName, PredictFailure, Reason}
+MS_SMHBA_FC_Port                    {}                   {FabricName, FcId, NodeWWN, NumberofDiscoveredPorts...}
+ISCSI_TargetPortal                  {}                   {Address, Reserved, Socket}
+ProcessorAcpiTssState               {}                   {Control, FreqPercentage, Power, Reserved1...}
+MSFC_NPIVLUNMappingInformationEx    {}                   {Active, InstanceName, OSBus, OSLUN...}
+MSFC_HBAPortStatistics              {}                   {DumpedFrames, ErrorFrames, InvalidCRCCount, InvalidTxWordC...
+MSFC_FCAdapterHBAAttributes         {}                   {Active, DriverName, DriverVersion, FirmwareVersion...}
+MSiSCSI_RADIUSConfig                {}                   {Active, BackupRADIUSServer, InstanceName, RADIUSServer...}
+MSWmi_Guid                          {}                   {Guid}
+MSFC_FibrePortHBAMethods            {ResetStatistics}    {Active, InstanceName}
+TeeDriverAMTWmiInfo                 {}                   {Active, AmtAdtRecInfo, AmtCapablity, AmtEnabled...}
+MS_SM_TargetInformationMethods      {SM_GetTargetMapp... {Active, InstanceName}
+MSNdis                              {}                   {}
+MSNdis_CoDriverVersion              {}                   {Active, InstanceName, NdisCoDriverVersion}
+MSNdis_WmiIPSecOffloadV1_Supported  {}                   {AhEspCombined, Encapsulation, Flags, IPv4Options...}
+MSNdis_ReceiveFilterCapabilities    {}                   {EnabledFilterTypes, EnabledQueueTypes, Flags, Header...}
+MSNdis_DriverVersion                {}                   {Active, InstanceName, NdisDriverVersion}
+MSNdis_80211_ReceiveAntennaSelected {}                   {Active, InstanceName, Ndis80211ReceiveAntennaSelected}
+MSNdis_EthernetPermanentAddress     {}                   {Active, InstanceName, NdisPermanentAddress}
+MSNdis_WmiIPSecOffloadV1            {}                   {WmiIPv4AH, WmiIPv4ESP, WmiSupported}
+MSNdis_ReceiveFilterGlobalParame... {}                   {EnabledFilterTypes, EnabledQueueTypes, Flags, Header}
+MSNdis_FddiLongPermanentAddress     {}                   {Active, InstanceName, NdisPermanentAddress}
+MSNdis_FddiLemRejects               {}                   {Active, InstanceName, NdisFddiLemRejects}
+MSNdis_80211_RTSThreshold           {}                   {Active, InstanceName, Ndis80211RTSThreshold}
+MSNdis_QueryNicSwitchCurrentCapa... {WmiQueryNICSwitc... {Active, InstanceName}
+MSNdis_QueryPhysicalMediumTypeEx    {WmiQueryPhysical... {Active, InstanceName}
+MSNdis_PMAdminConfigState           {}                   {NdisPMAdminConfigState}
+MSNdis_EthernetCurrentAddress       {}                   {Active, InstanceName, NdisCurrentAddress}
+MSNdis_EthernetMacOptions           {}                   {Active, InstanceName, NdisEthernetMacOptions}
+MSNdis_PciDeviceProperty            {}                   {CurrentLinkSpeed, CurrentLinkWidth, CurrentPayloadSize, Cu...
+MSNdis_SetHDSplitParameters         {WmiSetHDSplitPar... {Active, InstanceName}
+MSNdis_AtmMaxAal34PacketSize        {}                   {Active, InstanceName, NdisAtmMaxAal34PacketSize}
+MSNdis_CoMediaInUse                 {}                   {Active, InstanceName, NdisCoMediaInUse, NumberElements}
+MSNdis_TcpOffloadParameters         {}                   {Flags, Header, IPsec, IPv4Checksum...}
+MSNdis_EthernetMulticastList        {}                   {Active, InstanceName, NdisMulticastList, NumberElements}
+MSNdis_ReceiveFilterInfo            {}                   {FilterId, FilterType, Flags, Header}
+MSNdis_WmiTcpConnectionOffload      {}                   {Encapsulation, Flags, Header, SupportIp4...}
+MSNdis_EthernetReceiveErrorAlign... {}                   {Active, InstanceName, NdisEthernetReceiveErrorAlignment}
+MSNdis_80211_AddWEP                 {}                   {Active, InstanceName, KeyIndex, KeyLength...}
+MSNdis_TcpConnectionOffloadHardw... {WmiQueryTcpConne... {Active, InstanceName}
+MSNdis_80211_ConfigurationInfo      {}                   {ATIMWindow, BeaconPeriod, ConfigLength, DSConfig...}
+MSNdis_QueryReceiveQueueParameters  {WmiQueryReceiveQ... {Active, InstanceName}
+MSNdis_FddiShortMaximumListSize     {}                   {Active, InstanceName, NdisFddiShortMaximumListSize}
+MSNdis_AtmMaxAal1PacketSize         {}                   {Active, InstanceName, NdisAtmMaxAal1PacketSize}
+MSNdis_FddiRingManagmentState       {}                   {Active, InstanceName, NdisFddiRingManagmentState}
+MSNdis_CoLinkSpeed                  {}                   {Active, InstanceName, NdisCoLinkSpeed}
+MSNdis_PMCapabilities               {}                   {Active, InstanceName, PMCapabilitiesParam}
+MSNdis_PMCapabilitiesParam          {}                   {DeviceSleepOnDisconnect, Header, PMARPOffload, PMNDOffload...
+MSNdis_TokenRingLastOpenStatus      {}                   {Active, InstanceName, NdisTokenRingLastOpenStatus}
+MSNdis_80211_ReloadDefaults         {}                   {Active, InstanceName, Ndis80211ReloadDefaults}
+MSNdis_FddiFrameErrors              {}                   {Active, InstanceName, NdisFddiFrameErrors}
+MSNdis_TransmitsError               {}                   {Active, InstanceName, NdisTransmitsError}
+MSNdis_FddiAttachmentType           {}                   {Active, InstanceName, NdisFddiAttachmentType}
+MSNdis_CoMediaConnectStatus         {}                   {Active, InstanceName, NdisCoMediaConnectStatus}
+MSNdis_GroupAffinity                {}                   {Group, Mask, Reserved}
+MSNdis_NetworkDirectCapabilities    {}                   {Active, InstanceName, NdCapabilities}
+MSNdis_80211_BssIdListScan          {}                   {Active, InstanceName, UnusedParameter}
+MSNdis_80211_InfrastructureMode     {}                   {Active, InstanceName, Ndis80211InfrastructureMode}
+MSNdis_80211_ConfigurationFH        {}                   {DwellTime, FHLength, HopPattern, HopSet}
+MSNdis_VendorDescription            {}                   {Active, InstanceName, NdisVendorDescription}
+MSNdis_QueryStatisticsInfo          {WmiQueryStatisti... {Active, InstanceName}
+MSNdis_WmiIPSecOffloadV1_IPv4ESP    {}                   {Des, NullEsp, Receive, Reserved...}
+MSNdis_CoHardwareStatus             {}                   {Active, InstanceName, NdisCoHardwareStatus}
+MSNdis_FddiShortPermanentAddress    {}                   {Active, InstanceName, NdisPermanentAddress}
+MSNdis_TransmitBufferSpace          {}                   {Active, InstanceName, NdisTransmitBufferSpace}
+MSNdis_80211_BaseServiceSetIdent... {}                   {Active, InstanceName, Ndis80211MacAddress}
+MSNdis_TokenRingLostFrames          {}                   {Active, InstanceName, NdisTokenRingLostFrames}
+MSNdis_ReceiveBlockSize             {}                   {Active, InstanceName, NdisReceiveBlockSize}
+MSNdis_WmiTcpLargeSendOffloadV1     {}                   {WmiIPv4}
+MSNdis_WmiMethodHeader              {}                   {Header, NetLuid, Padding, PortNumber...}
+MSNdis_AtmTransmitCellsOk           {}                   {Active, InstanceName, NdisAtmTransmitCellsOk}
+MSNdis_AtmReceiveCellsOk            {}                   {Active, InstanceName, NdisAtmReceiveCellsOk}
+MSNdis_FddiLConnectionState         {}                   {Active, InstanceName, NdisFddiLConnectionState}
+MSNdis_PMAdminConfigParam           {}                   {DeviceSleepOnDisconnect, Header, PMARPOffload, PMNDOffload...
+MSNdis_CurrentLookahead             {}                   {Active, InstanceName, NdisCurrentLookahead}
+MSNdis_StatisticsInfo               {}                   {Header, ifHCInBroadcastOctets, ifHCInBroadcastPkts, ifHCIn...
+MSNdis_VendorID                     {}                   {Active, InstanceName, NdisVendorID}
+MSNdis_WmiTcpIpChecksumOffload_I... {}                   {Encapsulation, IpExtensionHeadersSupported, TcpChecksum, T...
+MSNdis_CountedString                {}                   {Length, String}
+MSNdis_NetworkDirectState           {}                   {Active, Enabled, InstanceName}
+MSNdis_QueryReceiveFilterParameters {WmiQueryReceiveF... {Active, InstanceName}
+MSNdis_VendorDriverVersion          {}                   {Active, InstanceName, NdisVendorDriverVersion}
+MSNdis_NetworkDirectVersion         {}                   {MajorVersionNumber, MinorVersionNumber}
+MSNdis_TransmitBlockSize            {}                   {Active, InstanceName, NdisTransmitBlockSize}
+MSNdis_RSSEnabled                   {}                   {Active, InstanceName, RSSEnabled}
+MSNdis_MaximumFrameSize             {}                   {Active, InstanceName, NdisMaximumFrameSize}
+MSNdis_EnumerateReceiveQueues       {WmiEnumReceiveQu... {Active, InstanceName}
+MSNdis_AtmMaxAal0PacketSize         {}                   {Active, InstanceName, NdisAtmMaxAal0PacketSize}
+MSNdis_MediaSupported               {}                   {Active, InstanceName, NdisMediaSupported, NumberElements}
+MSNdis_TransmitsOk                  {}                   {Active, InstanceName, NdisTransmitsOk}
+MSNdis_EthernetOneTransmitCollision {}                   {Active, InstanceName, NdisEthernetOneTransmitCollision}
+MSNdis_ReceiveFilterParameters      {}                   {FieldParameters, FieldParametersArrayElementSize, FieldPar...
+MSNdis_TokenRingPermanentAddress    {}                   {Active, InstanceName, NdisPermanentAddress}
+MSNdis_NicSwitchCapabilities        {}                   {Flags, Header, NdisReserved1, NdisReserved2...}
+MSNdis_ReceiveBufferSpace           {}                   {Active, InstanceName, NdisReceiveBufferSpace}
+MSNdis_WmiEnumAdapter               {}                   {DeviceName, Header, IfIndex, NetLuid}
+MSNdis_80211_ReceivedSignalStrength {}                   {Active, InstanceName, Ndis80211ReceivedSignalStrength}
+MSNdis_AtmMaxActiveVciBits          {}                   {Active, InstanceName, NdisAtmMaxActiveVciBits}
+MSNdis_HardwareStatus               {}                   {Active, InstanceName, NdisHardwareStatus}
+MSNdis_AtmSupportedAalTypes         {}                   {Active, InstanceName, NdisAtmSupportedAalTypes}
+MSNdis_FddiFramesLost               {}                   {Active, InstanceName, NdisFddiFramesLost}
+MSNdis_80211_NetworkType            {}                   {Ndis80211NetworkType}
+MSNdis_80211_PrivacyFilter          {}                   {Active, InstanceName, Ndis80211PrivacyFilter}
+MSNdis_LinkParameters               {}                   {AutoNegotiationFlags, Header, MediaDuplexState, PauseFunct...
+MSNdis_WmiTcpLargeSendOffloadV2_... {}                   {Encapsulation, IpExtensionHeadersSupported, MaxOffLoadSize...
+MSNdis_80211_TransmitPowerLevel     {}                   {Active, InstanceName, Ndis80211TransmitPowerLevel}
+MSNdis_PhysicalMediumType           {}                   {Active, InstanceName, NdisPhysicalMediumType}
+MSNdis_WmiReceiveScaleCapabilities  {}                   {CapabilitiesFlags, Header, NumberOfInterruptMessages, Numb...
+MSNdis_EthernetMaximumMulticastL... {}                   {Active, InstanceName, NdisEthernetMaximumMulticastListSize}
+MSNdis_SetTcpOffloadParameters      {WmiSetTcpOffload... {Active, InstanceName}
+MSNdis_ObjectHeader                 {}                   {Revision, Size, Type}
+MSNdis_CoTransmitPduErrors          {}                   {Active, InstanceName, NdisCoTransmitPduErrors}
+MSNdis_SetInterruptModeration       {WmiSetInterruptM... {Active, InstanceName}
+MSNdis_80211_NetworkInfrastructure  {}                   {Ndis80211NetworkInfrastructure}
+MSNdis_VlanIdentifier               {}                   {Active, InstanceName, NdisVlanId}
+MSNdis_TcpOffloadCurrentConfig      {WmiQueryCurrentO... {Active, InstanceName}
+MSNdis_80211_WLanBssId              {}                   {Ndis80211Configuration, Ndis80211InfrastructureMode, Ndis8...
+MSNdis_TokenRingCurrentRingStatus   {}                   {Active, InstanceName, NdisTokenRingCurrentRingStatus}
+MSNdis_QueryPortState               {WmiQueryPortState}  {Active, InstanceName}
+MSNdis_PortChar                     {}                   {Direction, Flags, Header, MediaConnectState...}
+MSNdis_ReceivesOk                   {}                   {Active, InstanceName, NdisReceivesOk}
+MSNdis_FddiLongCurrentAddress       {}                   {Active, InstanceName, NdisCurrentAddress}
+MSNdis_80211_NetworkTypesSupported  {}                   {Active, InstanceName, Ndis80211NetworkTypes, NumberOfItems}
+MSNdis_WmiTcpIpChecksumOffload_I... {}                   {Encapsulation, IpChecksum, IpOptionsSupported, TcpChecksum...
+MSNdis_EnumerateAdapter             {}                   {Active, DeviceName, InstanceName}
+MSNdis_QueryPciDeviceCustomProperty {WmiQueryPciDevic... {Active, InstanceName}
+MSNdis_ReceiveQueueInfoArray        {}                   {ElementSize, FirstElementOffset, Header, NumElements...}
+MSNdis_MediaConnectStatus           {}                   {Active, InstanceName, NdisMediaConnectStatus}
+MSNdis_MaximumLookahead             {}                   {Active, InstanceName, NdisMaximumLookahead}
+MSNdis_FddiDownstreamNodeLong       {}                   {Active, InstanceName, NdisFddiDownstreamNodeLong}
+MSNdis_WmiOutputInfo                {}                   {DataOffset, Flags, Header, Padding1...}
+MSNdis_NetworkDirectAdapterInfo     {}                   {DeviceId, FRMRPageCount, InOrderDMA, LargeRequestThreshold...
+MSNdis_WmiHDSplitCurrentConfig      {}                   {BackfillSize, CurrentCapabilities, HardwareCapabilities, H...
+MSNdis_AtmSupportedVcRates          {}                   {Active, InstanceName, MaxCellRate, MinCellRate}
+MSNdis_LinkState                    {WmiQueryLinkState}  {Active, InstanceName}
+MSNdis_80211_NetworkTypeInUse       {}                   {Active, InstanceName, Ndis80211NetworkTypeInUse}
+MSNdis_ReceiveScaleCapabilities     {WmiQueryReceiveS... {Active, InstanceName}
+MSNdis_NdisEnumerateVc              {}                   {Active, InstanceName}
+MSNdis_PMCapabilityState            {}                   {NdisPMCapabilityState}
+MSNdis_TokenRingCurrentRingState    {}                   {Active, InstanceName, NdisTokenRingCurrentRingState}
+MSNdis_80211_RemoveWEP              {}                   {Active, InstanceName, Ndis80211KeyIndex}
+MSNdis_80211_NumberOfAntennas       {}                   {Active, InstanceName, Ndis80211NumberOfAntennas}
+MSNdis_FddiLongMulticastList        {}                   {Active, InstanceName, NdisMulticastList, NumberElements}
+MSNdis_CoVendorDescription          {}                   {Active, InstanceName, NdisCoVendorDescription}
+MSNdis_80211_AuthenticationMode     {}                   {Active, InstanceName, Ndis80211AuthenticationMode}
+MSNdis_CoReceivePduErrors           {}                   {Active, InstanceName, NdisCoReceivePduErrors}
+MSNdis_FddiShortMulticastList       {}                   {Active, InstanceName, NdisMulticastList, NumberElements}
+MSNdis_80211_FragmentationThreshold {}                   {Active, InstanceName, Ndis80211FragmentationThreshold}
+MSNdis_CoMediaSupported             {}                   {Active, InstanceName, NdisCoMediaSupported, NumberElements}
+MSNdis_TokenRingLineErrors          {}                   {Active, InstanceName, NdisTokenRingLineErrors}
+MSNdis_HDSplitCurrentConfig         {WmiQueryHDSplitC... {Active, InstanceName}
+MSNdis_AtmSupportedServiceCategory  {}                   {Active, InstanceName, NdisAtmSupportedServiceCategory}
+MSNdis_80211_Statistics             {}                   {ACKFailureCount, Active, FailedCount, FCSErrorCount...}
+MSNdis_PortArray                    {}                   {ElementSize, Header, NumberOfPorts, OffsetFirstPort...}
+MSNdis_TokenRingCurrentGroup        {}                   {Active, InstanceName, NdisTokenRingCurrentGroup}
+MSNdis_AtmMaxActiveVcs              {}                   {Active, InstanceName, NdisAtmMaxActiveVcs}
+MSNdis_ReceiveQueueParameters       {}                   {Flags, Header, LookaheadSize, MSIXTableEntry...}
+MSNdis_QueryReceiveFilterHardwar... {WmiQueryReceiveF... {Active, InstanceName}
+MSNdis_WmiTcpLargeSendOffloadV2_... {}                   {Encapsulation, MaxOffLoadSize, MinSegmentCount}
+MSNdis_QueryNicSwitchHardwareCap... {WmiQueryNICSwitc... {Active, InstanceName}
+MSNdis_WmiIPSecOffloadV1_IPv4AH     {}                   {Md5, Receive, Send, Sha_1...}
+MSNdis_HDSplitParameters            {}                   {HDSplitCombineFlags, Header}
+MSNdis_EnumerateAdapterEx           {}                   {Active, EnumerateAdapter, InstanceName}
+MSNdis_MediaInUse                   {}                   {Active, InstanceName, NdisMediaInUse, NumberElements}
+MSNdis_SetPortParameters            {WmiSetPortParame... {Active, InstanceName}
+MSNdis_ReceiveNoBuffer              {}                   {Active, InstanceName, NdisReceiveNoBuffer}
+MSNdis_AtmHardwareCurrentAddress    {}                   {Active, InstanceName, NdisAtmHardwareCurrentAddress}
+MSNdis_AtmReceiveCellsDropped       {}                   {Active, InstanceName, NdisAtmReceiveCellsDropped}
+MSNdis_ReceiveFilterInfoArray       {}                   {ElementSize, Filter, FirstElementOffset, Header...}
+MSNdis_FddiLongMaximumListSize      {}                   {Active, InstanceName, NdisFddiLongMaximumListSize}
+MSNdis_80211_BSSIList               {}                   {Active, InstanceName, Ndis80211BSSIList, NumberOfItems}
+MSNdis_FddiLctFailures              {}                   {Active, InstanceName, NdisFddiLctFailures}
+MSNdis_MaximumTotalSize             {}                   {Active, InstanceName, NdisMaximumTotalSize}
+MSNdis_CoReceivePdusNoBuffer        {}                   {Active, InstanceName, NdisCoReceivePdusNoBuffer}
+MSNdis_80211_WEPStatus              {}                   {Active, InstanceName, Ndis80211WEPStatus}
+MSNdis_InterruptModerationParame... {}                   {Flags, Header, InterruptModeration}
+MSNdis_TokenRingCurrentAddress      {}                   {Active, InstanceName, NdisCurrentAddress}
+MSNdis_EnumeratePorts               {WmiEnumeratePorts}  {Active, InstanceName}
+MSNdis_PortStateData                {}                   {Direction, Flags, Header, MediaConnectState...}
+MSNdis_SetLinkParameters            {WmiSetLinkParame... {Active, InstanceName}
+MSNdis_DeviceWakeOnMagicPacketOnly  {}                   {Active, EnableWakeOnMagicPacketOnly, InstanceName}
+MSNdis_WmiSetHeader                 {}                   {Header, NetLuid, Padding, PortNumber...}
+MSNdis_CoReceivePdusOk              {}                   {Active, InstanceName, NdisCoReceivePdusOk}
+MSNdis_FddiShortCurrentAddress      {}                   {Active, InstanceName, NdisCurrentAddress}
+MSNdis_QueryInterruptModeration     {WmiQueryInterrup... {Active, InstanceName}
+MSNdis_AtmMaxActiveVpiBits          {}                   {Active, InstanceName, NdisAtmMaxActiveVpiBits}
+MSNdis_FddiUpstreamNodeLong         {}                   {Active, InstanceName, NdisFddiUpstreamNodeLong}
+MSNdis_80211_PowerMode              {}                   {Active, InstanceName, Ndis80211PowerMode}
+MSNdis_WmiTcpIpChecksumOffload      {}                   {IPv4Receive, IPv4Transmit, IPv6Receive, IPv6Transmit}
+MSNdis_AtmMaxAal5PacketSize         {}                   {Active, InstanceName, NdisAtmMaxAal5PacketSize}
+MSNdis_MacOptions                   {}                   {Active, InstanceName, NdisMacOptions}
+MSNdis_TcpOffloadHardwareConfig     {WmiQueryHardware... {Active, InstanceName}
+MSNdis_NetworkDirectAdapterCapab... {}                   {MaxCqCount, MaxInboundReadLimit, MaxMrCount, MaxMwCount...}
+MSNdis_ReceiveFilterFieldParameters {}                   {FieldByteArrayValue, Flags, FrameHeader, Header...}
+MSNdis_PortAuthParameters           {}                   {Header, RcvAuthorizationState, RcvControlState, SendAuthor...
+MSNdis_PMAdminConfig                {}                   {Active, InstanceName, PMAdminConfigParam}
+MSNdis_WmiOffload                   {}                   {Checksum, Flags, Header, IPsecV1...}
+MSNdis_QueryReceiveFilterGlobalP... {WmiQueryReceiveF... {Active, InstanceName}
+MSNdis_80211_Configuration          {}                   {Active, InstanceName, Ndis80211Config}
+MSNdis_NetworkAddress               {}                   {Address}
+MSNdis_LinkSpeed                    {}                   {Active, InstanceName, NdisLinkSpeed}
+MSNdis_80211_ServiceSetIdentifier   {}                   {Active, InstanceName, Ndis80211SsId}
+MSNdis_80211_TransmitAntennaSele... {}                   {Active, InstanceName, Ndis80211TransmitAntennaSelected}
+MSNdis_EthernetMoreTransmitColli... {}                   {Active, InstanceName, NdisEthernetMoreTransmitCollisions}
+MSNdis_QueryReceiveFilterCurrent... {WmiQueryReceiveF... {Active, InstanceName}
+MSNdis_80211_Disassociate           {}                   {Active, InstanceName, UnusedParameter}
+MSNdis_ReceiveError                 {}                   {Active, InstanceName, NdisReceiveError}
+MSNdis_CoTransmitPdusOk             {}                   {Active, InstanceName, NdisCoTransmitPdusOk}
+MSNdis_CoMacOptions                 {}                   {Active, InstanceName, NdisCoMacOptions}
+MSNdis_80211_DataRates              {}                   {Active, InstanceName, Ndis80211DataRate}
+MSNdis_CoMinimumLinkSpeed           {}                   {Active, InstanceName, NdisCoMinimumLinkSpeed}
+MSNdis_CoVendorDriverVersion        {}                   {Active, InstanceName, NdisCoVendorDriverVersion}
+MSNdis_EnumerateReceiveFilters      {WmiEnumReceiveFi... {Active, InstanceName}
+MSNdis_TokenRingCurrentFunctional   {}                   {Active, InstanceName, NdisTokenRingCurrentFunctional}
+MSNdis_WmiTcpLargeSendOffloadV2     {}                   {WmiIPv4, WmiIPv6}
+MSNdis_80211_DesiredDataRates       {}                   {Active, InstanceName, Ndis80211DesiredRate}
+MSNdis_80211_ReceivedSignalStren... {}                   {Active, InstanceName, Ndis80211ReceivedSignalStrengthTrigger}
+MSNdis_CoVendorId                   {}                   {Active, InstanceName, NdisCoVendorID}
+MSNdis_NetworkLinkSpeed             {}                   {Inbound, Outbound}
+MSNdis_NetworkShortAddress          {}                   {Address}
+MSNdis_LinkStateData                {}                   {AutoNegotiationFlags, Header, MediaConnectState, MediaDupl...
+MSNdis_ReceiveQueueInfo             {}                   {Flags, Header, LookaheadSize, MSIXTableEntry...}
+MSNdis_WmiTcpLargeSendOffloadV1_... {}                   {Encapsulation, IpOptions, MaxOffLoadSize, MinSegmentCount...}
+MSNdis_TcpConnectionOffloadCurre... {WmiQueryTcpConne... {Active, InstanceName}
+MSNdis_CurrentPacketFilter          {}                   {Active, InstanceName, NdisCurrentPacketFilter}
+MSNdis_MaximumSendPackets           {}                   {Active, InstanceName, NdisMaximumSendPackets}
+MSiSCSI_HBASessionConfig            {}                   {Active, FirstBurstLength, ImmediateData, InitialR2T...}
+WMIBinaryMofResource                {}                   {HighDateTime, LowDateTime, MofProcessed, Name}
+MSiSCSIInitiator_TargetAddress      {}                   {OSBusNumber, OSDeviceName, OSLunNumber, OSTargetNumber}
+WHEA                                {}                   {}
+WHEAErrorInjectionMethods           {GetErrorInjectio... {Active, InstanceName}
+WHEAPolicyManagementMethods         {WheaGetAllPolicy... {Active, InstanceName}
+WHEAErrorSourceMethods              {GetAllErrorSourc... {Active, InstanceName}
+MS_SMHBA_SASPHYSTATISTICS           {}                   {InvalidDwordCount, LossofDwordSyncCount, PhyResetProblemCo...
+KernelIdleState                     {}                   {Context, DemotePercent, IdleHandler, Latency...}
+MS_SMHBA_FC_PHY                     {}                   {MaxFrameSize, PhySpeed, PhySupportSpeed, PhyType}
+MS_WmiInternal                      {}                   {}
+MSWmi_MofData                       {}                   {Active, BinaryMofData, InstanceName, Size...}
+MSWmi_PnPInstanceNames              {}                   {Active, Count, InstanceName, InstanceNameList}
+MSWmi_ProviderInfo                  {}                   {Active, Description, FriendlyName, InstanceName...}
+MSWmi_PnPDeviceId                   {}                   {Active, InstanceName, PnPDeviceId}
+MSiSCSIInitiator_TargetLoginOptions {}                   {AuthType, DataDigest, DefaultTime2Retain, DefaultTime2Wait...
+TeeDriverAmtAdtRecWmiInfo           {}                   {Active, AmtNvarIsValid, CertificateSerials, HostInitiated...}
+MSiSCSIInitiator_PortalGroup        {}                   {Index, Portals}
+ProcessorAcpiCstState               {}                   {Latency, PowerConsumption, Register, StateType}
+AcpiPct                             {}                   {Control, Status}
+HBAScsiID                           {}                   {OSDeviceName, ScsiBusNumber, ScsiOSLun, ScsiTargetNumber}
+EventTrace                          {}                   {}
+Mpssvc                              {}                   {Flags, Level}
+DedupTracingProvider                {}                   {}
+DedupTracingEventClass              {}                   {}
+DedupTracingEventClass_DedupTrac... {}                   {FunctionName, Indent, LineNumber, MessageDescription...}
+CtlGuidFDWSD                        {}                   {Flags}
+FrameworkTraceGuid                  {}                   {Flags, Level}
+CtlGuidWPDShServiceObj              {}                   {Flags}
+MSNT_FileBaseTrace_VolumeToLog      {}                   {Flags}
+Bid2Etw_OLEDB_1                     {}                   {}
+Bid2Etw_OLEDB_1_Trace               {}                   {}
+Bid2Etw_OLEDB_1_Trace_TextW         {}                   {ModID, msgStr}
+Bid2Etw_OLEDB_1_Trace_TextA         {}                   {ModID, msgStr}
+EA_IME_API                          {}                   {Flags}
+CscFastSync                         {}                   {Flags}
+AUTHFWCFG                           {}                   {Flags}
+MSKerbTrace                         {}                   {}
+KerbInitSecurityContext             {}                   {}
+KerbInitSecurityContext_End         {}                   {CredSource, DomainName, ExtError, klininfo...}
+KerbInitSecurityContext_Start       {}                   {}
+KerbSetPassword                     {}                   {}
+KerbSetPassword_Start               {}                   {}
+KerbSetPassword_End                 {}                   {AccountName, AccountRealm, ClientName, ClientRealm...}
+KerbLogonUser                       {}                   {}
+KerbLogonUser_End                   {}                   {LogonDomain, LogonType, Status, UserName}
+KerbLogonUser_Start                 {}                   {}
+KerbChangePassword                  {}                   {}
+KerbChangePassword_End              {}                   {AccountName, DomainName, Status}
+KerbChangePassword_Start            {}                   {}
+KerbAcceptSecurityContext           {}                   {}
+KerbAcceptSecurityContext_End       {}                   {CredSource, DomainName, Status, Target...}
+KerbAcceptSecurityContext_Start     {}                   {}
+CtlGuidWPDCI                        {}                   {Flags}
+FaxCtlGuid                          {}                   {Flags, Level}
+MsftDiscFormat2MsfAddress           {}                   {Flags, Level}
+CtlGuidPortableDeviceClassExtension {}                   {Flags}
+UmPass                              {}                   {Flags, Level}
+HeapTraceProvider                   {}                   {}
+HeapTrace_V2                        {}                   {}
+HeapAlloc                           {}                   {AllocAddress, AllocSize, HeapHandle, SourceId}
+HeapAffinityManagerEnable           {}                   {BucketIndex, HeapHandle}
+HeapCommitDecommit                  {}                   {Block, Caller, HeapHandle, Size}
+HeapAffinitySlotChanged             {}                   {Heap, SlotIndex, SubSegment}
+HeapSubsegmentReuseThresholdActi... {}                   {BucketIndex, Heap, SubSegment}
+HeapFree                            {}                   {FreeAddress, HeapHandle, SourceId}
+Heap_SubsegmentGroup                {}                   {BlockSize, HeapHandle, SubSegment, SubSegmentSize}
+HeapRealloc                         {}                   {HeapHandle, NewAllocAddress, NewAllocSize, OldAllocAddress...
+HeapSubSegmentActivated             {}                   {HeapHandle, SubSegment}
+Heap_TypeGroup1                     {}                   {HeapHandle}
+HeapSnapShot_V2                     {}                   {CommittedSpace, FreeListLength, FreeSpace, HeapFlags...}
+HeapAffinitySlotAssigned            {}                   {SlotIndex}
+HeapCreate_V2                       {}                   {HeapFlags, HeapHandle}
+HeapSubsegmentInitialize            {}                   {AffinityIndex, BlockCount, BlockSize, HeapHandle...}
+HeapTrace                           {}                   {}
+HeapCreate                          {}                   {AllocatedSpace, CommittedSpace, HeapFlags, HeapHandle...}
+HeapSnapShot                        {}                   {AllocatedSpace, CommittedSpace, FreeListLength, FreeSpace...}
+HeapContract                        {}                   {AllocatedSpace, CommittedSpace, DeCommitAddress, DeCommitt...
+HeapExpand                          {}                   {AllocatedSpace, CommitAddress, CommittedSize, CommittedSpa...
+CtlGuidFDSSDP                       {}                   {Flags}
+NetworkProfileManagerTraceGUID      {}                   {Flags}
+LpcTraceGuid                        {}                   {Flags, Level}
+Bid2Etw_DBNETLIB_1                  {}                   {}
+Bid2Etw_DBNETLIB_1_Trace            {}                   {}
+Bid2Etw_DBNETLIB_1_Trace_TextA      {}                   {ModID, msgStr}
+Bid2Etw_DBNETLIB_1_Trace_TextW      {}                   {ModID, msgStr}
+WlansvcCtlGuid                      {}                   {Flags}
+MupLog                              {}                   {Flags}
+NwfMsmCtlGuid                       {}                   {Flags}
+CscService                          {}                   {Flags, Level}
+MsftDiscFormat2StreamInterleave     {}                   {Flags, Level}
+KerberosDebugTrace                  {}                   {Flags}
+MsftDiscFormat2StreamConcatenate    {}                   {Flags, Level}
+HostProcessTraceGuid                {}                   {Flags, Level}
+WMI_Tracing                         {}                   {Flags}
+LLTDSVC                             {}                   {Flags}
+CtlGuidWpdFs                        {}                   {Flags}
+iScsi                               {}                   {Flags}
+RefsWppTrace                        {}                   {Flags}
+Bid2Etw_RowsetHelper_1              {}                   {}
+Bid2Etw_RowsetHelper_1_Trace        {}                   {}
+Bid2Etw_RowsetHelper_1_Trace_TextW  {}                   {ModID, msgStr}
+Bid2Etw_RowsetHelper_1_Trace_TextA  {}                   {ModID, msgStr}
+MobTabPerfTraceProvider             {}                   {Flags}
+Bid2Etw_SQLOLEDB_1                  {}                   {}
+Bid2Etw_SQLOLEDB_1_Trace            {}                   {}
+Bid2Etw_SQLOLEDB_1_Trace_TextW      {}                   {ModID, msgStr}
+Bid2Etw_SQLOLEDB_1_Trace_TextA      {}                   {ModID, msgStr}
+RSSPlatformBackgroundsyncTracePr... {}                   {Flags}
+MSLSATrace                          {}                   {}
+OpenTrustedDomain                   {}                   {}
+OpenTrustedDomain_Start             {}                   {}
+OpenTrustedDomain_End               {}                   {}
+MSLSA_LookupIsolatedNameInTruste... {}                   {}
+MSLSA_LookupIsolatedNameInTruste... {}                   {ClientNetworkAddress, IsolatedName}
+QueryInfoPolicy                     {}                   {}
+QueryInfoPolicy_End                 {}                   {}
+QueryInfoPolicy_Start               {}                   {}
+Close                               {}                   {}
+Close_Start                         {}                   {}
+Close_End                           {}                   {}
+SetForestTrustInfo                  {}                   {}
+SetForestTrustInfo_End              {}                   {}
+SetForestTrustInfo_Start            {}                   {}
+SetInfoPolicy2                      {}                   {}
+SetInfoPolicy2_Start                {}                   {}
+SetInfoPolicy2_End                  {}                   {}
+QueryInfoPolicy2                    {}                   {}
+QueryInfoPolicy2_Start              {}                   {}
+QueryInfoPolicy2_End                {}                   {}
+QryInfoTrustDom                     {}                   {}
+QryInfoTrustDom_End                 {}                   {}
+QryInfoTrustDom_Start               {}                   {}
+LookupNames                         {}                   {}
+LookupNames_End                     {}                   {}
+LookupNames_Start                   {}                   {}
+OpenPolicy                          {}                   {}
+OpenPolicy_Start                    {}                   {}
+OpenPolicy_End                      {}                   {}
+EnumTrustedDoms                     {}                   {}
+EnumTrustedDoms_Start               {}                   {}
+EnumTrustedDoms_End                 {}                   {}
+SetInfoTrustedDom                   {}                   {}
+SetInfoTrustedDom_End               {}                   {}
+SetInfoTrustedDom_Start             {}                   {}
+OpTrustedDomByName                  {}                   {}
+OpTrustedDomByName_End              {}                   {}
+OpTrustedDomByName_Start            {}                   {}
+SetDomainInfoPolicy                 {}                   {}
+SetDomainInfoPolicy_End             {}                   {}
+SetDomainInfoPolicy_Start           {}                   {}
+QueryDomainInfoPolicy               {}                   {}
+QueryDomainInfoPolicy_Start         {}                   {}
+QueryDomainInfoPolicy_End           {}                   {}
+SetInfoPolicy                       {}                   {}
+SetInfoPolicy_End                   {}                   {}
+SetInfoPolicy_Start                 {}                   {}
+CreateTrustedDomEx                  {}                   {}
+CreateTrustedDomEx_Start            {}                   {}
+CreateTrustedDomEx_End              {}                   {}
+QueryForestTrustInfo                {}                   {}
+QueryForestTrustInfo_Start          {}                   {}
+QueryForestTrustInfo_End            {}                   {}
+QryTrstDomByNam                     {}                   {}
+QryTrstDomByNam_End                 {}                   {}
+QryTrstDomByNam_Start               {}                   {}
+SetTrstedDomInfoByNam               {}                   {}
+SetTrstedDomInfoByNam_End           {}                   {}
+SetTrstedDomInfoByNam_Start         {}                   {}
+EnumTrstedDomEx                     {}                   {}
+EnumTrstedDomEx_Start               {}                   {}
+EnumTrstedDomEx_End                 {}                   {}
+QuerySecret                         {}                   {}
+QuerySecret_Start                   {}                   {}
+QuerySecret_End                     {}                   {}
+LookupSids                          {}                   {}
+LookupSids_Start                    {}                   {}
+LookupSids_End                      {}                   {}
+qoswmiQOSWMI                        {}                   {Flags, Level}
+WlanDlgTraceGuid                    {}                   {Flags}
+Bid2Etw_MSDASQL_1                   {}                   {}
+Bid2Etw_MSDASQL_1_Trace             {}                   {}
+Bid2Etw_MSDASQL_1_Trace_TextW       {}                   {ModID, msgStr}
+Bid2Etw_MSDASQL_1_Trace_TextA       {}                   {ModID, msgStr}
+DiskGuid                            {}                   {Flags, Level}
+Bid2Etw_MSADCO_1                    {}                   {}
+Bid2Etw_MSADCO_1_Trace              {}                   {}
+Bid2Etw_MSADCO_1_Trace_TextW        {}                   {ModID, msgStr}
+Bid2Etw_MSADCO_1_Trace_TextA        {}                   {ModID, msgStr}
+MpsDrvTrace                         {}                   {Flags}
+WSAT_TraceProvider                  {}                   {}
+WSAT_TraceEvent                     {}                   {}
+WSAT_TraceRecord                    {}                   {ActivityID, EventID, TraceRecord}
+ActivityTransfer                    {}                   {ActivityID, RelatedActivityID}
+SensorClassExtensionControlGuid     {}                   {Flags}
+FwpkclntTraceProvider               {}                   {}
+CtlGuidWpdMtp                       {}                   {Flags}
+CtlGuidWpdShellExtension            {}                   {Flags}
+Bid2Etw_MSDAREM_1                   {}                   {}
+Bid2Etw_MSDAREM_1_Trace             {}                   {}
+Bid2Etw_MSDAREM_1_Trace_TextA       {}                   {ModID, msgStr}
+Bid2Etw_MSDAREM_1_Trace_TextW       {}                   {ModID, msgStr}
+Sdbus                               {}                   {Flags}
+WCN                                 {}                   {Flags, Level}
+MSNT_FileBaseTrace_Set1             {}                   {Flags}
+FileTrace                           {}                   {Flags}
+FileOperation                       {}                   {AccessToken, CreateOnExisting, FileName, FileObject...}
+ThreadPool                          {}                   {}
+ThreadPoolTrace_V2                  {}                   {}
+TP_V2_PoolCreateClose               {}                   {PoolId}
+TP_V2_CBDequeue                     {}                   {TaskId}
+TP_V2_TimerExpiration               {}                   {DueTime, Period, SubQueue, Timer...}
+TP_V2_TimerExpirationGroup          {}                   {SubQueue}
+TP_V2_TimerSet                      {}                   {Absolute, DueTime, Period, SubQueue...}
+TP_V2_CBCancel                      {}                   {CancelCount, TaskId}
+TP_V2_ThreadSet                     {}                   {PoolId, ThreadNum}
+TP_V2_TimerSetNtTimer               {}                   {DueTime, SubQueue, TolerableDelay}
+TP_V2_CBEnqueue                     {}                   {CallbackContext, CallbackFunction, PoolId, SubProcessTag...}
+TP_V2_TimerCancelled                {}                   {SubQueue, Timer}
+TP_V2_WTNodeSwitch                  {}                   {CurrentGroup, CurrentNode, CurrentWorkerCount, NextGroup...}
+ThreadPoolTrace                     {}                   {}
+TPCBCancel                          {}                   {CallbackContext, CallbackFunction, CancelCount, PoolId...}
+TPCBDequeue                         {}                   {CallbackContext, CallbackFunction, PoolId, SubProcessTag...}
+WlanGPClientGuid                    {}                   {Flags}
+MsftDiscFormat2RawImage             {}                   {Flags, Level}
+NetAdapterCimNDISWMI                {}                   {Flags, Level}
+IpsecPolicyAgent                    {}                   {Flags}
+Wudfx02000KmdfTraceGuid             {}                   {Flags, Level}
+MSNT_CKCLTraceProvider              {}                   {Flags}
+Bid2Etw_MSADCE_1                    {}                   {}
+Bid2Etw_MSADCE_1_Trace              {}                   {}
+Bid2Etw_MSADCE_1_Trace_TextA        {}                   {ModID, msgStr}
+Bid2Etw_MSADCE_1_Trace_TextW        {}                   {ModID, msgStr}
+CscApi                              {}                   {Flags}
+CMsftMultisessionSequential         {}                   {Flags, Level}
+CLRTrace                            {}                   {}
+WorkerThreadRetirement              {}                   {}
+UnretireWorkerThread                {}                   {RetiredWorkers, WorkerThreadCount}
+RetireWorkerThread                  {}                   {RetiredWorkers, WorkerThreadCount}
+IOThreadRetirement                  {}                   {}
+UnretireIOThread                    {}                   {IOThreadCount, RetiredIOs}
+RetireIOThread                      {}                   {IOThreadCount, RetiredIOs}
+CLRAuthenticodeVerification         {}                   {}
+AuthenticodeVerification            {}                   {ErrorCode, ModulePath, VerificationFlags}
+FusionNGENBinder                    {}                   {}
+RefDefNgenBindRejectInfo            {}                   {DefModuleName, RefModuleName, RejectReason}
+NgenBindRejectInfo                  {}                   {RejectReason}
+ModuleNgenBindRejectInfo            {}                   {ModuleNameOrFilePath, RejectReason}
+WorkerThreadCreation                {}                   {}
+CreateWorkerThread                  {}                   {RetiredWorkers, WorkerThreadCount}
+TerminateWorkerThread               {}                   {RetiredWorkers, WorkerThreadCount}
+IOThreadCreation                    {}                   {}
+CreateIOThread                      {}                   {IOThreadCount, RetiredIOs}
+TerminateIOThread                   {}                   {IOThreadCount, RetiredIOs}
+CLRStrongNameVerification           {}                   {}
+StrongNameVerification              {}                   {ErrorCode, FullyQualifiedAssemblyName, VerificationFlags}
+Monitor                             {}                   {}
+Contention                          {}                   {}
+CLRMethod                           {}                   {}
+MethodLoadUnLoad                    {}                   {MethodFlags, MethodIdentifier, MethodSize, MethodStartAddr...
+MethodLoadUnLoadVerbose             {}                   {MethodFlags, MethodIdentifier, Methodname, MethodNameSpace...
+RundownComplete                     {}                   {}
+GarbageCollection                   {}                   {}
+GCStart                             {}                   {Count, Depth, Reason, Type}
+GCFinalizersEnd                     {}                   {Count}
+GCRestartEEEnd                      {}                   {}
+RestartEEBegin                      {}                   {}
+HeapStats                           {}                   {FinalizationPromotedCount, FinalizationPromotedSize, GCHan...
+GCFinalizersBegin                   {}                   {}
+GCEnd                               {}                   {Count, Depth}
+AllocationTick                      {}                   {Allocation, AllocationKind}
+AllocateSegment                     {}                   {Address, Size, Type}
+SuspendEEBegin                      {}                   {GcCount, Reason}
+GCSuspendEEEnd                      {}                   {}
+FreeSegment                         {}                   {Address}
+Exceptions                          {}                   {}
+ExceptionThrown                     {}                   {}
+ThreadpoolSuspend                   {}                   {}
+SuspendThread                       {}                   {CPUUtil, TID}
+ResumeThread                        {}                   {CPUUtil, TID}
+CLRLoader                           {}                   {}
+ModuleLoadUnLoad                    {}                   {AssemblyId, ModuleFlags, ModuleId, ModuleILPath...}
+WinLogon                            {}                   {Flags}
+IPMIPrv                             {}                   {Flags}
+ObjectsGuid                         {}                   {Flags, Level}
+RSSPlatformTraceProvider            {}                   {Flags}
+MMC                                 {}                   {Flags}
+PNRP                                {}                   {Flags, Level}
+CscDclUser                          {}                   {Flags}
+MpsIpsecClient                      {}                   {Flags}
+CritSecTraceProvider                {}                   {}
+CritSecTrace                        {}                   {}
+CritSecInit                         {}                   {CritSecAddr, SpinCount}
+CritSecCollision                    {}                   {CritSecAddr, LockCount, OwningThread, SpinCount}
+ReflectorTraceGuid                  {}                   {Flags, Level}
+FwpuclntTraceProvider               {}                   {}
+CtlGuidWMP                          {}                   {Flags, Level}
+IkeextTraceProvider                 {}                   {}
+Mountmgr                            {}                   {Flags, Level}
+NETIO                               {}                   {Flags}
+MSNT_SystemTrace                    {}                   {Flags}
+FileIo_V2                           {}                   {Flags}
+FileIo_V2_MapFile                   {}                   {FileObject, Flags, MiscInfo, ProcessId...}
+FileIo_V2_DirEnum                   {}                   {FileIndex, FileKey, FileName, FileObject...}
+FileIo_V2_OpEnd                     {}                   {ExtraInfo, Flags, IrpPtr, NtStatus}
+FileIo_V2_SimpleOp                  {}                   {FileKey, FileObject, Flags, IrpPtr...}
+FileIo_V2_ReadWrite                 {}                   {FileKey, FileObject, Flags, IoFlags...}
+FileIo_V2_Info                      {}                   {ExtraInfo, FileKey, FileObject, Flags...}
+FileIo_V2_Name                      {}                   {FileName, FileObject, Flags}
+FileIo_V2_Create                    {}                   {CreateOptions, FileAttributes, FileObject, Flags...}
+PerfInfo_V0                         {}                   {Flags}
+Mark_V0                             {}                   {Flags, Message, Padding}
+ObTrace                             {}                   {Flags}
+ObReferenceEvent                    {}                   {Count, Flags, Object, Tag}
+ObTypeEvent                         {}                   {Flags, ObjectType, Reserved, TypeName}
+ObHandleRundownEvent                {}                   {Flags, Handle, Object, ObjectName...}
+ObObjectEvent                       {}                   {Flags, Object, ObjectType}
+ObHandleDuplicateEvent              {}                   {Flags, Object, ObjectType, SourceHandle...}
+ObHandleEvent                       {}                   {Flags, Handle, Object, ObjectName...}
+PageFault_V2                        {}                   {Flags}
+PageFault_HardFault                 {}                   {ByteCount, FileObject, Flags, InitialTime...}
+PageFault_VirtualAllocRundown       {}                   {BaseAddress, CommitSizeInBytes, Flags, ProcessId...}
+PageFault_VirtualAlloc              {}                   {BaseAddress, Flags, ProcessId, RegionSize}
+PageFault_MemReset                  {}                   {BaseAddress, Flags, SizeInBytes}
+PageFault_HeapRangeRundown_V2       {}                   {Flags, HeapHandle, HRFlags, HRPid...}
+PageFault_HeapRangeDestroy          {}                   {Flags, HeapHandle}
+PageFault_TypeGroup1                {}                   {Flags, ProgramCounter, VirtualAddress}
+PageFault_ImageLoadBacked           {}                   {DeviceChar, FileChar, FileObject, Flags...}
+PageFault_HeapRangeTypeGroup        {}                   {Flags, HeapHandle, HRAddress, HRSize}
+PageFault_HeapRangeCreate           {}                   {FirstRangeSize, Flags, HeapHandle, HRCreateFlags}
+PageFault_VirtualRotate             {}                   {BaseAddress, Flags, SizeInBytes}
+PerfInfo_V2                         {}                   {Flags}
+FinalizeKTimer2                     {}                   {DisableCallback, DisableContext, Flags, Timer}
+WDF_ISR                             {}                   {Flags, Routine}
+WDF_DPC                             {}                   {Flags, Routine}
+ISR_Unexpected                      {}                   {Flags, Vector}
+SampledProfile                      {}                   {Count, Flags, InstructionPointer, Reserved...}
+CancelKTimer2                       {}                   {Flags, Timer}
+PmcCounterProfile                   {}                   {Flags, InstructionPointer, ProfileSource, Reserved...}
+PmcCounterConfig_V2                 {}                   {CounterCount, CounterName, Flags}
+SysCallExit                         {}                   {Flags, SysCallNtStatus}
+ISR_MSI                             {}                   {Flags, InitialTime, MessageNumber, Reserved...}
+DisableKTimer2                      {}                   {DisableCallback, DisableContext, Flags, Timer...}
+SetOrExpireKTimer2                  {}                   {Callback, CallbackContext, DueTime, Flags...}
+ISR                                 {}                   {Flags, InitialTime, Reserved, ReturnValue...}
+SysCallEnter                        {}                   {Flags, SysCallAddress}
+IoTimerEvent                        {}                   {DeviceObject, Flags, TimerRoutine}
+WDF_WorkItem                        {}                   {Flags, Routine}
+DebuggerEnabled                     {}                   {Flags}
+SampledProfileInterval_V2           {}                   {Flags, NewInterval, OldInterval, Source}
+HV_Hypercall                        {}                   {CallCode, Flags, IsFast, IsNested}
+DPC                                 {}                   {Flags, InitialTime, Routine}
+SpinLockConfig_V2                   {}                   {Flags, SpinLockAcquireSampleRate, SpinLockContentionSample...
+UdpIp                               {}                   {Flags}
+UdpIp_Fail                          {}                   {FailureCode, Flags, Proto}
+UdpIp_TypeGroup2                    {}                   {connid, daddr, dport, Flags...}
+UdpIp_TypeGroup1                    {}                   {connid, daddr, dport, Flags...}
+Thread_V2                           {}                   {Flags}
+AutoBoostClearFloor                 {}                   {BoostBitmap, Flags, LockAddress, ThreadId}
+WorkerThread                        {}                   {Flags, StartTime, ThreadRoutine, TThreadId}
+KernelQueueEnqueue                  {}                   {Entry, Flags, ThreadId}
+CSwitch_V2                          {}                   {Flags, NewThreadId, NewThreadPriority, NewThreadWaitTime...}
+SubProcessTagChanged                {}                   {Flags, NewTag, OldTag}
+SpinLock                            {}                   {AcquireDepth, AcquireTime, CallerAddress, Flag...}
+ThreadMigration                     {}                   {Flags, IdealProcessorAdjust, OldIdealProcessorIndex, Prior...
+KernelQueueDequeue                  {}                   {Entries, EntryCount, Flags, ThreadId}
+AutoBoostSetFloor                   {}                   {BoostFlags, Flags, IoPriorities, Lock...}
+ThreadAffinity                      {}                   {Affinity, Flags, Group, Reserved...}
+WorkerThread_StartStop_V2           {}                   {CallbackRoutine, Flags}
+ThreadSetName                       {}                   {Flags, ProcessId, ThreadId, ThreadName}
+CompCS                              {}                   {Flags}
+AutoBoostEntryExhaustion            {}                   {Flags, LockAddress, ThreadId}
+ReadyThread                         {}                   {AdjustIncrement, AdjustReason, Flag, Flags...}
+AntiStarvationBoost                 {}                   {Flags, Priority, ProcessorIndex, Reserved...}
+Thread_V2_TypeGroup1                {}                   {Flags, ProcessId, StackBase, StackLimit...}
+UdpIp_V0                            {}                   {Flags}
+UdpIp_V0_TypeGroup1                 {}                   {context, daddr, dport, dsize...}
+StackWalk                           {}                   {Flags}
+StackWalk_TypeGroup1                {}                   {Flags, key, StackFrame}
+StackWalk_Key                       {}                   {EventTimeStamp, Flags, StackKey, StackProcess...}
+StackWalk_Event                     {}                   {EventTimeStamp, Flags, Stack1, Stack10...}
+DiskIo_V1                           {}                   {Flags}
+V1_DriverMajorFunctionReturn        {}                   {Flags, Irp, UniqMatchId}
+V1_DriverCompleteRequest            {}                   {Flags, Irp, RoutineAddr, UniqMatchId}
+V1_DriverCompleteRequestReturn      {}                   {Flags, Irp, UniqMatchId}
+DiskIo_V1_TypeGroup1                {}                   {ByteOffset, DiskNumber, FileObject, Flags...}
+V1_DriverMajorFunctionCall          {}                   {FileObject, Flags, Irp, MajorFunction...}
+UmsEvent                            {}                   {Flags}
+UmsContextSwitch                    {}                   {Flags, KernelYieldCount, MixedYieldCount, ScheduledThreadI...
+UmsDirectedSwitchEnd                {}                   {Flags, PrimaryThreadId, ProcessId, ScheduledThreadId...}
+UmsScheduledPark                    {}                   {Flags, ParkFlags, ProcessId, ScheduledThreadId}
+UmsDisassociate                     {}                   {Flags, PrimaryThreadId, ProcessId, ScheduledThreadId...}
+UmsDirectedSwitchStart              {}                   {Flags, PrimaryThreadId, ProcessId, ScheduledThreadId...}
+PerfInfo                            {}                   {Flags}
+SampledProfileInterval_V3           {}                   {Flags, NewInterval, OldInterval, Source...}
+SpinLockConfig_V3                   {}                   {Flags, SpinLockAcquireSampleRate, SpinLockContentionSample...
+TcpIp_V1                            {}                   {Flags}
+TcpIp_V1_Fail                       {}                   {Flags, Proto}
+TcpIp_V1_TypeGroup3                 {}                   {connid, daddr, dport, Flags...}
+TcpIp_V1_Send                       {}                   {connid, daddr, dport, endtime...}
+TcpIp_V1_TypeGroup1                 {}                   {connid, daddr, dport, Flags...}
+TcpIp_V1_TypeGroup2                 {}                   {connid, daddr, dport, Flags...}
+TcpIp_V1_Receive                    {}                   {connid, daddr, dport, Flags...}
+EventTraceEvent                     {}                   {Flags}
+Header_BuildInfo_TypeGroup          {}                   {BuildString, Flags}
+Header_DbgIdRSDS_TypeGroup          {}                   {Age, Flags, Guid, PdbName}
+Header_PartitionInfoExtensionV2_... {}                   {EventVersion, Flags, ParentId, PartitionId...}
+Header_Extension_TypeGroup          {}                   {Flags, GroupMask1, GroupMask2, GroupMask3...}
+Header_LastDroppedTimes_TypeGroup   {}                   {Flags, Padding, TimeStamp, TimeStampCount}
+Header_PartitionInfoExtension_Ty... {}                   {EventVersion, Flags, ParentId, PartitionId...}
+EventTrace_Header                   {}                   {BootTime, BufferSize, BuffersLost, BuffersWritten...}
+Header_ProviderBinaryPath_TypeGroup {}                   {BinaryPath, Flags, Guid, GuidCount}
+RDComplete                          {}                   {Flags}
+MMCSSTrace                          {}                   {Flags}
+MMCSSEvent                          {}                   {Flags, ScheduledPID, ScheduledTID, SchedulingPriority...}
+MMCSSWakeup                         {}                   {Flags, Reason}
+MMCSS_TypeGroup                     {}                   {Flags}
+SystemConfig_V1                     {}                   {Flags}
+SystemConfig_V1_LogDisk             {}                   {BytesPerSector, DiskNumber, DriveLetterString, DriveType...}
+SystemConfig_V1_PhyDisk             {}                   {BootDriveLetter, BytesPerSector, Cylinders, DiskNumber...}
+SystemConfig_V1_IRQ                 {}                   {DeviceDescription, DeviceDescriptionLen, Flags, IRQAffinit...
+SystemConfig_V1_CPU                 {}                   {AllocationGranularity, ComputerName, DomainName, Flags...}
+SystemConfig_V1_Power               {}                   {Flags, Pad1, Pad2, Pad3...}
+SystemConfig_V1_Video               {}                   {AdapterString, BiosString, BitsPerPixel, ChipType...}
+SystemConfig_V1_Services            {}                   {DisplayName, Flags, ProcessId, ProcessName...}
+SystemConfig_V1_PnP                 {}                   {DescriptionLength, DeviceDescription, DeviceID, Flags...}
+SystemConfig_V1_NIC                 {}                   {Data, DhcpServer, DnsServer1, DnsServer2...}
+Registry                            {}                   {Flags}
+Registry_HiveDirty                  {}                   {DirtyReason, Flags, Hive, LinkPath}
+Registry_Config                     {}                   {CurrentControlSet, Flags}
+Registry_HiveDestroy                {}                   {FileName, Flags, Hive, Path}
+Registry_Counters                   {}                   {Counter1, Counter10, Counter11, Counter2...}
+Registry_TypeGroup1                 {}                   {Flags, Index, InitialTime, KeyHandle...}
+Registry_HiveInitialize             {}                   {FileName, Flags, Hive, OperationType...}
+Registry_TxR                        {}                   {Flags, Hive, OperationTime, Status...}
+Registry_HiveRundown                {}                   {FileName, Flags, Hive, LinkPath...}
+Registry_ChangeNotification         {}                   {Flags, KeyHandle, Notification, Primary...}
+Registry_HiveLink                   {}                   {Flags, Hive, Path}
+PageFault                           {}                   {Flags}
+PageFault_HeapRangeRundown          {}                   {Flags, HeapHandle, HRFlags, HRPid...}
+EventTraceEvent_V0                  {}                   {Flags}
+RDComplete_V0                       {}                   {Flags}
+Header_Extension_V0_TypeGroup       {}                   {Flags, GroupMask1, GroupMask2, GroupMask3...}
+EventTrace_V0_Header                {}                   {BootTime, BufferSize, BuffersLost, BuffersWritten...}
+Process_V1                          {}                   {Flags}
+Process_V1_TypeGroup1               {}                   {ExitStatus, Flags, ImageFileName, PageDirectoryBase...}
+PerfInfo_V1                         {}                   {Flags}
+SampledProfile_V1                   {}                   {Count, Flags, InstructionPointer, ThreadId}
+DPC_V1                              {}                   {Flags, InitialTime, Routine}
+ISR_V1                              {}                   {Flags, InitialTime, ReturnValue, Routine}
+Image_V2                            {}                   {Flags}
+KernelImageBase                     {}                   {Flags, ImageBase}
+LoaderBasicEvent                    {}                   {Flags}
+LoaderCodedEvent                    {}                   {BaseAddress, Code, ErrorOpcode, Flags...}
+LoaderBaseEvent                     {}                   {BaseAddress, Flags}
+Image_Load_V2                       {}                   {DefaultBase, FileName, Flags, ImageBase...}
+HypercallPage                       {}                   {Flags, HypercallPageVa}
+UdpIp_V1                            {}                   {Flags}
+UdpIp_V1_TypeGroup1                 {}                   {daddr, dport, Flags, PID...}
+Registry_V0                         {}                   {Flags}
+Registry_V0_TypeGroup1              {}                   {ElapsedTime, Flags, KeyHandle, KeyName...}
+Process_V0                          {}                   {Flags}
+Process_V0_TypeGroup1               {}                   {Flags, ImageFileName, ParentId, ProcessId...}
+FileIo                              {}                   {Flags}
+FileIo_ReadWrite                    {}                   {FileKey, FileObject, Flags, IoFlags...}
+FileIo_Create                       {}                   {CreateOptions, FileAttributes, FileObject, Flags...}
+FltIoInit                           {}                   {CallbackDataPtr, FileContext, FileObject, Flags...}
+FltIoFailure                        {}                   {CallbackDataPtr, FileContext, FileObject, Flags...}
+FileIo_Name                         {}                   {FileName, FileObject, Flags}
+FileIo_Info                         {}                   {ExtraInfo, FileKey, FileObject, Flags...}
+FileIo_SimpleOp                     {}                   {FileKey, FileObject, Flags, IrpPtr...}
+FltIoCompletion                     {}                   {CallbackDataPtr, FileContext, FileObject, Flags...}
+FileIo_DirEnum                      {}                   {FileIndex, FileKey, FileName, FileObject...}
+FileIo_PathOperation                {}                   {ExtraInfo, FileKey, FileName, FileObject...}
+FileIo_OpEnd                        {}                   {ExtraInfo, Flags, IrpPtr, NtStatus}
+SplitIo                             {}                   {Flags}
+SplitIo_Info                        {}                   {ChildIrp, Flags, ParentIrp}
+TcpIp                               {}                   {Flags}
+TcpIp_TypeGroup3                    {}                   {connid, daddr, dport, Flags...}
+TcpIp_SendIPV4                      {}                   {connid, daddr, dport, endtime...}
+TcpIp_Fail                          {}                   {FailureCode, Flags, Proto}
+TcpIp_TypeGroup2                    {}                   {connid, daddr, dport, Flags...}
+TcpIp_SendIPV6                      {}                   {connid, daddr, dport, endtime...}
+TcpIp_TypeGroup1                    {}                   {connid, daddr, dport, Flags...}
+TcpIp_TypeGroup4                    {}                   {connid, daddr, dport, Flags...}
+Thread_V0                           {}                   {Flags}
+Thread_V0_TypeGroup1                {}                   {Flags, ProcessId, TThreadId}
+Registry_V1                         {}                   {Flags}
+Registry_V1_TypeGroup1              {}                   {ElapsedTime, Flags, Index, KeyHandle...}
+Image_V0                            {}                   {Flags}
+Image_V0_Load                       {}                   {BaseAddress, Flags, ImageFileName, ModuleSize}
+SystemConfig_V4                     {}                   {Flags}
+SystemConfig_V4_PnP                 {}                   {ClassGuid, DeviceDescription, DeviceID, Flags...}
+Image_V1                            {}                   {Flags}
+Image_V1_Load                       {}                   {FileName, Flags, ImageBase, ImageSize...}
+Thread_V3                           {}                   {Flags}
+Thread_V3_TypeGroup1                {}                   {Affinity, BasePriority, Flags, IoPriority...}
+ThreadPriority                      {}                   {Flags, NewPriority, OldPriority, Reserved...}
+CSwitch_V3                          {}                   {Flags, NewThreadId, NewThreadPriority, NewThreadWaitTime...}
+SystemConfig_V3                     {}                   {Flags}
+SystemConfig_V3_MobilePlatform      {}                   {BspVersion, DeviceManufacturer, DeviceManufacturerDisplayN...
+SystemConfig_V3_Services            {}                   {DisplayName, Flags, LoadOrderGroup, ProcessId...}
+SystemConfig_V3_IRQ                 {}                   {DeviceDescription, DeviceDescriptionLen, Flags, IRQAffinit...
+SystemConfig_V3_CPU                 {}                   {AllocationGranularity, ComputerName, DomainName, Flags...}
+SystemConfig_V3_PnP                 {}                   {DescriptionLength, DeviceDescription, DeviceID, Flags...}
+FileIo_V0                           {}                   {Flags}
+FileIo_V0_Name                      {}                   {FileName, FileObject, Flags}
+Thread_V4                           {}                   {Flags}
+Thread_TypeGroup1                   {}                   {Affinity, BasePriority, Flags, IoPriority...}
+CSwitch_V4                          {}                   {Flags, NewThreadId, NewThreadPriority, NewThreadWaitTime...}
+DiskIo_V0                           {}                   {Flags}
+DiskIo_V0_TypeGroup1                {}                   {ByteOffset, DiskNumber, FileObject, Flags...}
+SystemConfig                        {}                   {Flags}
+SystemConfig_PnP                    {}                   {ClassGuid, DeviceDescription, DeviceID, DevProblem...}
+Process                             {}                   {Flags}
+Process_Defunct_TypeGroup1          {}                   {ApplicationId, CommandLine, DirectoryTableBase, ExitStatus...
+PoolTrace                           {}                   {Flags}
+PoolAllocFree                       {}                   {Entry, Flags, NumberOfBytes, Tag...}
+SessionPoolAllocFree                {}                   {Entry, Flags, NumberOfBytes, SessionId...}
+PoolSnapshot                        {}                   {Flags}
+DiskIo                              {}                   {Flags}
+DiskIo_TypeGroup2                   {}                   {Flags, Irp, IssuingThreadId}
+DiskIo_TypeGroup1                   {}                   {ByteOffset, DiskNumber, FileObject, Flags...}
+DiskIo_TypeGroup3                   {}                   {DiskNumber, Flags, HighResResponseTime, Irp...}
+Lost_Event                          {}                   {Flags}
+RT_LostEvent                        {}                   {Flags}
+FileIo_V1                           {}                   {Flags}
+FileIo_V1_Name                      {}                   {FileName, FileObject, Flags}
+EventTraceEvent_V1                  {}                   {Flags}
+EventTrace_V1_Header                {}                   {BootTime, BufferSize, BuffersLost, BuffersWritten...}
+RDComplete_V1                       {}                   {Flags}
+Header_Extension_V1_TypeGroup       {}                   {Flags, GroupMask1, GroupMask2, GroupMask3...}
+Debugger                            {}                   {Flags}
+DebugPrint_Event                    {}                   {Component, Flags, Level, Message}
+DiskIo_V2                           {}                   {Flags}
+DiskIo_V2_TypeGroup1                {}                   {ByteOffset, DiskNumber, FileObject, Flags...}
+DriverMajorFunctionReturn           {}                   {Flags, Irp, UniqMatchId}
+DriverCompletionRoutine             {}                   {Flags, IrpPtr, Routine, UniqMatchId}
+DriverMajorFunctionCall             {}                   {FileObject, Flags, Irp, MajorFunction...}
+DriverCompleteRequestReturn         {}                   {Flags, Irp, UniqMatchId}
+DiskIo_V2_TypeGroup3                {}                   {DiskNumber, Flags, HighResResponseTime, Irp...}
+DiskIo_V2_TypeGroup2                {}                   {Flags, Irp}
+DriverCompleteRequest               {}                   {Flags, Irp, RoutineAddr, UniqMatchId}
+SystemConfig_V0                     {}                   {Flags}
+SystemConfig_V0_IRQ                 {}                   {DeviceDescription, DeviceDescriptionLen, Flags, IRQAffinit...
+SystemConfig_V0_CPU                 {}                   {AllocationGranularity, ComputerName, DomainName, Flags...}
+SystemConfig_V0_Services            {}                   {DisplayName, Flags, ProcessId, ProcessName...}
+SystemConfig_V0_LogDisk             {}                   {BytesPerSector, DiskNumber, DriveLetterString, DriveType...}
+SystemConfig_V0_Video               {}                   {AdapterString, BiosString, BitsPerPixel, ChipType...}
+SystemConfig_V0_PhyDisk             {}                   {BootDriveLetter, BytesPerSector, Cylinders, DiskNumber...}
+SystemConfig_V0_Power               {}                   {Flags, Pad1, Pad2, Pad3...}
+SystemConfig_V0_PnP                 {}                   {DescriptionLength, DeviceDescription, DeviceID, Flags...}
+SystemConfig_V0_NIC                 {}                   {Data, DhcpServer, DnsServer1, DnsServer2...}
+SystemConfig_V2                     {}                   {Flags}
+SystemConfig_V2_NumaNode            {}                   {Flags, NodeCount, NodeMap}
+SystemConfig_V2_PnP                 {}                   {DescriptionLength, DeviceDescription, DeviceID, Flags...}
+SystemConfig_V2_CodeIntegrity       {}                   {CodeIntegrityInfo, Flags}
+SystemConfig_V2_LogDisk             {}                   {BytesPerSector, DiskNumber, DriveLetterString, DriveType...}
+SystemConfig_Virtualization         {}                   {Flags, HvciEnabled, HyperVisorEnabled, Reserved...}
+SystemConfig_V2_IDEChannel          {}                   {DeviceTimingMode, DeviceType, Flags, LocationInformation...}
+SystemConfig_Boot                   {}                   {BootFlags, FirmwareType, Flags, Reserved1...}
+SystemConfig_V2_DPI                 {}                   {Flags, MachineDPI, UserDPI}
+SystemConfig_V2_NIC                 {}                   {DnsServerAddresses, Flags, IpAddresses, Ipv4Index...}
+SystemConfig_V2_CPU                 {}                   {AllocationGranularity, ComputerName, DomainName, Flags...}
+SystemConfig_V2_DeviceFamily        {}                   {DeviceFamily, DeviceForm, Flags, UAPInfo}
+SystemConfig_V2_OpticalMedia        {}                   {BusType, BytesPerSector, DeviceName, DeviceType...}
+SystemConfig_V2_ProcNumber          {}                   {Flags, ProcessorCount, ProcessorNumber}
+SystemConfig_V2_Video               {}                   {AdapterString, BiosString, BitsPerPixel, ChipType...}
+SystemConfig_V2_Network             {}                   {Flags, MaxHashTableSize, MaxUserPort, TcbTablePartitions...}
+SystemConfig_V2_Defrag              {}                   {AlignmentClusters, AvgFragmentsPerFile, AvgFreeSpaceSize, ...
+SystemConfig_V2_Processors          {}                   {FeatureSet, Flags, ProcessorIdentifier, ProcessorIndex...}
+SystemConfig_V2_Platform            {}                   {BiosDate, BiosVersion, Flags, SystemManufacturer...}
+SystemConfig_V2_ProcGroup           {}                   {Affinity, Flags, GroupCount}
+SystemConfig_V2_Services            {}                   {DisplayName, Flags, ProcessId, ProcessName...}
+SystemConfig_V2_PhyDisk             {}                   {BootDriveLetter, BytesPerSector, Cylinders, DiskNumber...}
+SystemConfig_V2_Power               {}                   {Flags, Pad1, Pad2, Pad3...}
+SystemConfig_V2_FlightIds           {}                   {Flags, FlightIdList, UpdateId}
+SystemConfig_V2_MobilePlatform      {}                   {BootLoaderVersion, FirmwareRevision, Flags, FriendlyName...}
+SystemConfig_V2_TelemetryInfo       {}                   {Flags, MachineId}
+SystemConfig_V2_IRQ                 {}                   {DeviceDescription, DeviceDescriptionLen, Flags, IRQAffinit...
+Thread_V1                           {}                   {Flags}
+Thread_V1_TypeGroup2                {}                   {Flags, ProcessId, TThreadId}
+Thread_V1_TypeGroup1                {}                   {Flags, ProcessId, StackBase, StackLimit...}
+CSwitch_V1                          {}                   {Flags, NewThreadId, NewThreadPriority, NewThreadQuantum...}
+WorkerThread_V1                     {}                   {Flags, StartTime, ThreadRoutine, TThreadId}
+TcpIp_V0                            {}                   {Flags}
+TcpIp_V0_TypeGroup1                 {}                   {daddr, dport, Flags, PID...}
+Process_V2                          {}                   {Flags}
+Process_V2_TypeGroup5               {}                   {Flags, Object}
+Process_V2_TypeGroup4               {}                   {Count, Flags, Object, ProcessId...}
+Process_V2_TypeGroup2               {}                   {Flags, HandleCount, PageFaultCount, PagefileUsage...}
+Process_V2_TypeGroup1               {}                   {CommandLine, ExitStatus, Flags, ImageFileName...}
+Process_Terminate_TypeGroup1        {}                   {Flags, ProcessId}
+Process_V2_TypeGroup3               {}                   {DirectoryTableBase, Flags, ProcessId}
+Process_V4                          {}                   {Flags}
+Process_V4_TypeGroup1               {}                   {ApplicationId, CommandLine, DirectoryTableBase, ExitStatus...
+PowerEvents                         {}                   {Flags}
+IdleExitLatency                     {}                   {Flags, PlatformState, ProcessorState, ReturnLatency...}
+Process_V3                          {}                   {Flags}
+Process_V3_TypeGroup1               {}                   {CommandLine, DirectoryTableBase, ExitStatus, Flags...}
+ALPC                                {}                   {Flags}
+ALPC_Receive_Message                {}                   {Flags, MessageID}
+ALPC_Wait_For_Reply                 {}                   {Flags, MessageID}
+ALPC_Send_Message                   {}                   {Flags, MessageID}
+ALPC_Unwait                         {}                   {Flags, Status}
+ALPC_Wait_For_New_Message           {}                   {Flags, IsServerPort, PortName}
+Image                               {}                   {Flags}
+Image_Load                          {}                   {DefaultBase, FileName, Flags, ImageBase...}
+LoaderDllSearchResults              {}                   {Flags, FullDllName, LdrLoadFlags, LdrSearchFlags...}
+LoaderNewDllEvent                   {}                   {FilePath, Flags, LoadReason, NewDllBaseAddress...}
+LoaderCodedEventPath                {}                   {BaseAddress, Code, ErrorOpcode, Flags...}
+LoaderCodedEventStatus              {}                   {BaseAddress, Code, ErrorOpcode, Flags...}
+LoaderPathSearchResults             {}                   {AppDir, Cwd, DllDir, DllLoadDir...}
+Bid2Etw_ADOMD_1                     {}                   {}
+Bid2Etw_ADOMD_1_Trace               {}                   {}
+Bid2Etw_ADOMD_1_Trace_TextA         {}                   {ModID, msgStr}
+Bid2Etw_ADOMD_1_Trace_TextW         {}                   {ModID, msgStr}
+AtaportGuid                         {}                   {Flags, Level}
+Mesh                                {}                   {Flags, Level}
+WDiagCoreCtlGuid                    {}                   {Flags}
+CscUm                               {}                   {Flags}
+CscNetApi                           {}                   {Flags}
+WinRM                               {}                   {Flags}
+Sbp2portGuid                        {}                   {Flags, Level}
+fdpHostCtlGuid                      {}                   {Flags}
+RSSPlatformPerformanceTraceProvider {}                   {Flags}
+MSNT_FileBaseTrace_Set2             {}                   {Flags}
+MsftEnumDiscRecorder2               {}                   {Flags, Level}
+WdfCoreTraceGuid                    {}                   {Flags, Level}
+ClasspnpGuid                        {}                   {Flags, Level}
+FirewallAPI                         {}                   {Flags, Level}
+MsftDiscFormat2Tao                  {}                   {Flags, Level}
+WMI_Tracing_Client_Operations       {}                   {Flags}
+Bid2Etw_ADODB_1                     {}                   {}
+Bid2Etw_ADODB_1_Trace               {}                   {}
+Bid2Etw_ADODB_1_Trace_TextA         {}                   {ModID, msgStr}
+Bid2Etw_ADODB_1_Trace_TextW         {}                   {ModID, msgStr}
+WMPNetwkGuid                        {}                   {Flags, Level}
+CtlGuidPortableDeviceConnectApi     {}                   {Flags}
+RFSMon                              {}                   {Flags}
+TSRdpEndPointTrace                  {}                   {Flags}
+UsbstorGuid                         {}                   {Flags, Level}
+FDWNetCtlGuid                       {}                   {Flags}
+MSNT_FileBaseTrace_OptionalData     {}                   {Flags}
+MsftDiscFormat2StreamZero           {}                   {Flags, Level}
+TSPkgDebugTrace                     {}                   {Flags}
+Refsv1WppTrace                      {}                   {Flags}
+WLanDiagCtlGuid                     {}                   {Flags}
+Bid2Etw_MSDATL3_1                   {}                   {}
+Bid2Etw_MSDATL3_1_Trace             {}                   {}
+Bid2Etw_MSDATL3_1_Trace_TextW       {}                   {ModID, msgStr}
+Bid2Etw_MSDATL3_1_Trace_TextA       {}                   {ModID, msgStr}
+XWIZARD_TRACE_GUID                  {}                   {Flags, Level}
+RestartManager                      {}                   {Flags}
+CtlGuidWpdBusEnum                   {}                   {Flags}
+TestTraceGuid                       {}                   {Flags, Level}
+PlatformLibraryTraceGuid            {}                   {Flags, Level}
+FWCFG                               {}                   {Flags}
+VssTracingProvider                  {}                   {}
+VssTracingEventClass                {}                   {}
+VssTracingEventClass_VssTracingE... {}                   {FunctionName, Indent, LineNumber, MessageDescription...}
+RSPNDR                              {}                   {Flags}
+SchannelDebugTrace                  {}                   {Flags}
+DigestDebugTrace                    {}                   {Flags}
+Regular                             {}                   {Flags}
+MsftDiscMaster2                     {}                   {Flags, Level}
+BITSServiceTrace                    {}                   {Flags}
+MSSAMTrace                          {}                   {}
+SamQueryInfoUser                    {}                   {}
+SamQueryInfoUser_End                {}                   {}
+SamQueryInfoUser_Start              {}                   {Client, Sam, Sid, Version}
+SamEnumUsersInDom                   {}                   {}
+SamEnumUsersInDom_Start             {}                   {Client, Sam, Sid, Version}
+SamEnumUsersInDom_End               {}                   {}
+SamEnumAliasesInDom                 {}                   {}
+SamEnumAliasesInDom_Start           {}                   {Client, Sam, Sid, Version}
+SamEnumAliasesInDom_End             {}                   {}
+SamConnect                          {}                   {}
+SamConnect_Start                    {}                   {Client, Sam, Sid, Version}
+SamConnect_End                      {}                   {}
+SamQueryDisplayInfo                 {}                   {}
+SamQueryDisplayInfo_Start           {}                   {Client, Sam, Sid, Version}
+SamQueryDisplayInfo_End             {}                   {}
+SamGetAliasMem                      {}                   {}
+SamGetAliasMem_Start                {}                   {Client, Sam, Sid, Version}
+SamGetAliasMem_End                  {}                   {}
+SamSetInfoGrp                       {}                   {}
+SamSetInfoGrp_Start                 {}                   {Client, Sam, Sid, Version}
+SamSetInfoGrp_End                   {}                   {}
+SamChangePwdComputer                {}                   {}
+SamChangePwdComputer_End            {}                   {}
+SamChangePwdComputer_Start          {}                   {Client, Sam, Sid, Version}
+SamGetBootKeyInfo                   {}                   {}
+SamGetBootKeyInfo_Start             {}                   {Client, Sam, Sid, Version}
+SamGetBootKeyInfo_End               {}                   {}
+SamAddMemToAlias                    {}                   {}
+SamAddMemToAlias_Start              {}                   {Client, Sam, Sid, Version}
+SamAddMemToAlias_End                {}                   {}
+SamSetBootKeyInfo                   {}                   {}
+SamSetBootKeyInfo_End               {}                   {}
+SamSetBootKeyInfo_Start             {}                   {Client, Sam, Sid, Version}
+SamEnumGrpsInDom                    {}                   {}
+SamEnumGrpsInDom_End                {}                   {}
+SamEnumGrpsInDom_Start              {}                   {Client, Sam, Sid, Version}
+SamIdByName                         {}                   {}
+SamIdByName_Start                   {}                   {Client, Sam, Sid, Version}
+SamIdByName_End                     {}                   {}
+SamOpenAlias                        {}                   {}
+SamOpenAlias_Start                  {}                   {Client, Sam, Sid, Version}
+SamOpenAlias_End                    {}                   {}
+SamQuerySecurityObj                 {}                   {}
+SamQuerySecurityObj_End             {}                   {}
+SamQuerySecurityObj_Start           {}                   {Client, Sam, Sid, Version}
+SamRemoveMemFromForeignDom          {}                   {}
+SamRemoveMemFromForeignDom_End      {}                   {}
+SamRemoveMemFromForeignDom_Start    {}                   {Client, Sam, Sid, Version}
+SamGetGrpsForUser                   {}                   {}
+SamGetGrpsForUser_Start             {}                   {Client, Sam, Sid, Version}
+SamGetGrpsForUser_End               {}                   {}
+SamOpenGrp                          {}                   {}
+SamOpenGrp_Start                    {}                   {Client, Sam, Sid, Version}
+SamOpenGrp_End                      {}                   {}
+SamNameById                         {}                   {}
+SamNameById_End                     {}                   {}
+SamNameById_Start                   {}                   {Client, Sam, Sid, Version}
+SamPwdPushPdc                       {}                   {}
+SamPwdPushPdc_Start                 {}                   {Client, Sam, Sid, Version}
+SamPwdPushPdc_End                   {}                   {}
+SamCompPwdSet                       {}                   {}
+SamCompPwdSet_Start                 {}                   {Client, Sam, Sid, Version}
+SamCompPwdSet_End                   {}                   {}
+SamSetInfoDom                       {}                   {}
+SamSetInfoDom_End                   {}                   {}
+SamSetInfoDom_Start                 {}                   {Client, Sam, Sid, Version}
+SamCloseHandle                      {}                   {}
+SamCloseHandle_End                  {}                   {}
+SamCloseHandle_Start                {}                   {Client, Sam, Sid, Version}
+SamOpenUser                         {}                   {}
+SamOpenUser_End                     {}                   {}
+SamOpenUser_Start                   {}                   {Client, Sam, Sid, Version}
+SamPwdChng                          {}                   {}
+SamPwdChng_Start                    {}                   {Client, Sam, Sid, Version}
+SamPwdChng_End                      {}                   {}
+SamCompCreate                       {}                   {}
+SamCompCreate_Start                 {}                   {Client, Sam, Sid, Version}
+SamCompCreate_End                   {}                   {}
+SamDeleteGrp                        {}                   {}
+SamDeleteGrp_End                    {}                   {}
+SamDeleteGrp_Start                  {}                   {Client, Sam, Sid, Version}
+SamQueryInfoAlias                   {}                   {}
+SamQueryInfoAlias_Start             {}                   {Client, Sam, Sid, Version}
+SamQueryInfoAlias_End               {}                   {}
+SamGetDisplayEnumIdx                {}                   {}
+SamGetDisplayEnumIdx_Start          {}                   {Client, Sam, Sid, Version}
+SamGetDisplayEnumIdx_End            {}                   {}
+SamOpenDomain                       {}                   {}
+SamOpenDomain_End                   {}                   {}
+SamOpenDomain_Start                 {}                   {Client, Sam, Sid, Version}
+SamGetMemInGrp                      {}                   {}
+SamGetMemInGrp_Start                {}                   {Client, Sam, Sid, Version}
+SamGetMemInGrp_End                  {}                   {}
+SamQueryInfoDom                     {}                   {}
+SamQueryInfoDom_Start               {}                   {Client, Sam, Sid, Version}
+SamQueryInfoDom_End                 {}                   {}
+SamGetUserDomPwdInfo                {}                   {}
+SamGetUserDomPwdInfo_End            {}                   {}
+SamGetUserDomPwdInfo_Start          {}                   {Client, Sam, Sid, Version}
+SamUserCreate                       {}                   {}
+SamUserCreate_End                   {}                   {}
+SamUserCreate_Start                 {}                   {Client, Sam, Sid, Version}
+SamSetMemAttrsOfGrp                 {}                   {}
+SamSetMemAttrsOfGrp_End             {}                   {}
+SamSetMemAttrsOfGrp_Start           {}                   {Client, Sam, Sid, Version}
+SamShutdownSamSrv                   {}                   {}
+SamShutdownSamSrv_End               {}                   {}
+SamShutdownSamSrv_Start             {}                   {Client, Sam, Sid, Version}
+SamProcessMappedAttributes          {}                   {}
+SamProcessMappedAttributes_Start    {}                   {Client, Sam, Sid, Version}
+SamProcessMappedAttributes_End      {}                   {}
+SamSetSecurityObj                   {}                   {}
+SamSetSecurityObj_End               {}                   {}
+SamSetSecurityObj_Start             {}                   {Client, Sam, Sid, Version}
+SamGetMemInAlias                    {}                   {}
+SamGetMemInAlias_Start              {}                   {Client, Sam, Sid, Version}
+SamGetMemInAlias_End                {}                   {}
+SamDeleteUser                       {}                   {}
+SamDeleteUser_End                   {}                   {}
+SamDeleteUser_Start                 {}                   {Client, Sam, Sid, Version}
+SamGetDomPwdInfo                    {}                   {}
+SamGetDomPwdInfo_End                {}                   {}
+SamGetDomPwdInfo_Start              {}                   {Client, Sam, Sid, Version}
+SamSetInfoAlias                     {}                   {}
+SamSetInfoAlias_End                 {}                   {}
+SamSetInfoAlias_Start               {}                   {Client, Sam, Sid, Version}
+SamUserPwdSet                       {}                   {}
+SamUserPwdSet_Start                 {}                   {Client, Sam, Sid, Version}
+SamUserPwdSet_End                   {}                   {}
+SamDeleteAlias                      {}                   {}
+SamDeleteAlias_End                  {}                   {}
+SamDeleteAlias_Start                {}                   {Client, Sam, Sid, Version}
+SamAddMemGrp                        {}                   {}
+SamAddMemGrp_End                    {}                   {}
+SamAddMemGrp_Start                  {}                   {Client, Sam, Sid, Version}
+SamDelMemGrp                        {}                   {}
+SamDelMemGrp_End                    {}                   {}
+SamDelMemGrp_Start                  {}                   {Client, Sam, Sid, Version}
+SamCreateAliasInDom                 {}                   {}
+SamCreateAliasInDom_Start           {}                   {Client, Sam, Sid, Version}
+SamCreateAliasInDom_End             {}                   {}
+SamRemoveMemFromAlias               {}                   {}
+SamRemoveMemFromAlias_Start         {}                   {Client, Sam, Sid, Version}
+SamRemoveMemFromAlias_End           {}                   {}
+SamQueryInfoGrp                     {}                   {}
+SamQueryInfoGrp_End                 {}                   {}
+SamQueryInfoGrp_Start               {}                   {Client, Sam, Sid, Version}
+SamEnumDomInSamSrv                  {}                   {}
+SamEnumDomInSamSrv_End              {}                   {}
+SamEnumDomInSamSrv_Start            {}                   {Client, Sam, Sid, Version}
+SamSetInfoUser                      {}                   {}
+SamSetInfoUser_End                  {}                   {}
+SamSetInfoUser_Start                {}                   {Client, Sam, Sid, Version}
+SamLookupDomInSamSrv                {}                   {}
+SamLookupDomInSamSrv_Start          {}                   {Client, Sam, Sid, Version}
+SamLookupDomInSamSrv_End            {}                   {}
+SamGrpCreate                        {}                   {}
+SamGrpCreate_Start                  {}                   {Client, Sam, Sid, Version}
+SamGrpCreate_End                    {}                   {}
+NSHIPSEC                            {}                   {Flags}
+RSSPlatformBackgroundsyncPerform... {}                   {Flags}
+MSV1_0DebugTrace                    {}                   {Flags}
+FileSystemImageTracing              {}                   {Flags, Level}
+UMBus                               {}                   {Flags, Level}
+DiagL2SecCtlGuid                    {}                   {Flags}
+CtlGuidPortableDeviceTypes          {}                   {Flags}
+NetworkItemFactoryTrace             {}                   {Flags}
+IPMIDRIVER                          {}                   {Flags}
+KmdfTraceGuid                       {}                   {Flags, Level}
+CtlGuid                             {}                   {Flags}
+MsftDiscRecorder2                   {}                   {Flags, Level}
+TSClientActiveXControlTrace         {}                   {Flags, Level}
+TSRDPShellTrace                     {}                   {Flags}
+LpcDriverTraceGuid                  {}                   {Flags, Level}
+Dll                                 {}                   {Flags, Level}
+ImapiV1Shim                         {}                   {Flags}
+Bid2Etw_MSDART_1                    {}                   {}
+Bid2Etw_MSDART_1_Trace              {}                   {}
+Bid2Etw_MSDART_1_Trace_TextW        {}                   {ModID, msgStr}
+Bid2Etw_MSDART_1_Trace_TextA        {}                   {ModID, msgStr}
+NCSICtlGuid                         {}                   {Flags}
+MSNetLogonTrace                     {}                   {}
+NlServerAuth                        {}                   {}
+NlServerAuth_End                    {}                   {Account, ChannelType, Client, NegotiatedFlags...}
+NlServerAuth_Start                  {}                   {Account, ChannelType, Client, NegotiatedFlags}
+NlSecChanlSetup                     {}                   {}
+NlSecChanlSetup_End                 {}                   {}
+NlSecChanlSetup_Start               {}                   {}
+PlugPlay                            {}                   {Flags}
+CtlGuidPortableDeviceAPI            {}                   {Flags}
+MsftDiscFormat2RawCD                {}                   {Flags, Level}
+Bid2Etw_MSDADIAG_ETW                {}                   {}
+Bid2Etw_MSDADIAG_ETW_Trace          {}                   {}
+Bid2Etw_MSDADIAG_ETW_Trace_TextA    {}                   {ModID, msgStr}
+Bid2Etw_MSDADIAG_ETW_Trace_TextW    {}                   {ModID, msgStr}
+BfeTraceProvider                    {}                   {}
+MsftUtils                           {}                   {Flags, Level}
+Bid2Etw_SQLSRV32_1                  {}                   {}
+Bid2Etw_SQLSRV32_1_Trace            {}                   {}
+Bid2Etw_SQLSRV32_1_Trace_TextW      {}                   {ModID, msgStr}
+Bid2Etw_SQLSRV32_1_Trace_TextA      {}                   {ModID, msgStr}
+WFAPIGP                             {}                   {Flags}
+MsftWriteEngine2                    {}                   {Flags, Level}
+LLTDIO                              {}                   {Flags}
+CertificateServicesClient           {}                   {Flags}
+TSMFTrace                           {}                   {Flags}
+CtlGuidUMB                          {}                   {Flags}
+MobilityCenterTrace                 {}                   {Flags}
+Bid2Etw_BCP_1                       {}                   {}
+Bid2Etw_BCP_1_Trace                 {}                   {}
+Bid2Etw_BCP_1_Trace_TextW           {}                   {ModID, msgStr}
+Bid2Etw_BCP_1_Trace_TextA           {}                   {ModID, msgStr}
+DriverManagerTraceGuid              {}                   {Flags, Level}
+WinInit                             {}                   {Flags}
+WMPNsCfgGuid                        {}                   {Flags, Level}
+NtfsLog                             {}                   {Flags}
+NlaSvcTraceCtlGuid                  {}                   {Flags}
+WMPNsSciGuid                        {}                   {Flags, Level}
+WnfProvider                         {}                   {}
+WNFTrace                            {}                   {}
+WNFCallback                         {}                   {Callback, ChangeStamp, DeliveryFlags, NameSub...}
+WNFPublish                          {}                   {DataLength, StateName}
+WNFNameSubRundown                   {}                   {NameSub, StateName}
+WNFSubUnsub                         {}                   {Callback, DeliveryFlags, NameSub, RefCount...}
+MSV1_0Trace                         {}                   {}
+NtlmValidateUser                    {}                   {}
+NtlmValidateUser_End                {}                   {LogonDomain, LogonServer, Success, UserName...}
+NtlmValidateUser_Start              {}                   {}
+NtlmServerAccept                    {}                   {}
+NtlmServerAccept_End                {}                   {InContext, OutContext, StageHint, Status}
+NtlmServerAccept_Info               {}                   {DomainName, Flags, InContext, OutContext...}
+NtlmServerAccept_Start              {}                   {InContext, StageHint}
+NtlmClientInitialize                {}                   {}
+NtlmClientInitialize_End            {}                   {InContext, OutContext, StageHint, Status}
+NtlmClientInitialize_Start          {}                   {InContext, StageHint}
+NtlmLogonUser                       {}                   {}
+NtlmLogonUser_Start                 {}                   {}
+NtlmLogonUser_End                   {}                   {DomainName, LogonType, Status, UserName}
+Bid2Etw_MSADOX_1                    {}                   {}
+Bid2Etw_MSADOX_1_Trace              {}                   {}
+Bid2Etw_MSADOX_1_Trace_TextA        {}                   {ModID, msgStr}
+Bid2Etw_MSADOX_1_Trace_TextW        {}                   {ModID, msgStr}
+CtlGuidWPDSP                        {}                   {Flags}
+Bid2Etw_ODBCBCP_1                   {}                   {}
+Bid2Etw_ODBCBCP_1_Trace             {}                   {}
+Bid2Etw_ODBCBCP_1_Trace_TextA       {}                   {ModID, msgStr}
+Bid2Etw_ODBCBCP_1_Trace_TextW       {}                   {ModID, msgStr}
+IpsecPolStore                       {}                   {Flags}
+CertificateServicesClient_Creden... {}                   {Flags}
+TSClientTrace                       {}                   {Flags}
+MsftDiscFormat2Data                 {}                   {Flags, Level}
+NwfDrvCtlGuid                       {}                   {Flags}
+IHVServiceFrameworkCtlGuid          {}                   {Flags}
+MuiTrace                            {}                   {}
+MuiTraceData                        {}                   {}
+MuiTraceData_String                 {}                   {MuiLoadString}
+fdResPubCtlGuid                     {}                   {Flags}
+MsftDiscFormat2Erase                {}                   {Flags, Level}
+Bid2Etw_MSADDS_1                    {}                   {}
+Bid2Etw_MSADDS_1_Trace              {}                   {}
+Bid2Etw_MSADDS_1_Trace_TextW        {}                   {ModID, msgStr}
+Bid2Etw_MSADDS_1_Trace_TextA        {}                   {ModID, msgStr}
+FDCtlGuid                           {}                   {Flags}
+Bid2Etw_ODBC_1                      {}                   {}
+Bid2Etw_ODBC_1_Trace                {}                   {}
+Bid2Etw_ODBC_1_Trace_TextA          {}                   {ModID, msgStr}
+Bid2Etw_ODBC_1_Trace_TextW          {}                   {ModID, msgStr}
+CtlGuidAssocDB                      {}                   {Flags}
+ACPITrace                           {}                   {}
+AMLIEvalData1                       {}                   {}
+AMLIEvalData1_TypeGroup1            {}                   {DataString}
+TSRdpInitTrace                      {}                   {Flags}
+Bid2Etw_MSDAPRST_1                  {}                   {}
+Bid2Etw_MSDAPRST_1_Trace            {}                   {}
+Bid2Etw_MSDAPRST_1_Trace_TextA      {}                   {ModID, msgStr}
+Bid2Etw_MSDAPRST_1_Trace_TextW      {}                   {ModID, msgStr}
+CtlGuidBthMtpEnum                   {}                   {Flags}
+MsftDiscFormat2StreamRandom         {}                   {Flags, Level}
+Bid2Etw_MSADCF_1                    {}                   {}
+Bid2Etw_MSADCF_1_Trace              {}                   {}
+Bid2Etw_MSADCF_1_Trace_TextW        {}                   {ModID, msgStr}
+Bid2Etw_MSADCF_1_Trace_TextA        {}                   {ModID, msgStr}
+TeeDriverAmtProvStateNvarWmiInfo    {}                   {Active, AmtNvarIsValid, ClientControlMode, InstanceName...}
+MSiSCSI_ManagementOperations        {PingIPAddress}      {Active, InstanceName}
+ProcessorAcpiTsdDependency          {}                   {CoordType, Domain, NumberOfEntries, NumProcessors...}
+MS_SM_ScsiInformationMethods        {SM_ScsiInquiry, ... {Active, InstanceName}
+MSFC_FibrePortNPIVMethodsEx         {SetChapForPhysic... {Active, InstanceName}
+VideoModeDescriptor                 {}                   {CompositePolarityType, HorizontalActivePixels, HorizontalB...
+CIM_StatisticalInformation          {}                   {Caption, Description, Name}
+Win32_Perf                          {}                   {Caption, Description, Frequency_Object, Frequency_PerfTime...
+Win32_PerfRawData                   {}                   {Caption, Description, Frequency_Object, Frequency_PerfTime...
+MSiSCSI_RequestTimeStatistics       {}                   {Active, AverageProcessingTime, Caption, CID...}
+MSiSCSI_SessionStatistics           {}                   {Active, BytesReceived, BytesSent, Caption...}
+MSiSCSI_QMIPSECStats                {}                   {Active, ActiveSA, ActiveTunnels, AuthenticatedBytesReceive...
+MSiSCSI_NICPerformance              {}                   {Active, BytesReceived, BytesTransmitted, Caption...}
+MSiSCSI_InitiatorLoginStatistics    {}                   {Active, Caption, Description, Frequency_Object...}
+MSBatteryClass                      {}                   {Caption, Description, Frequency_Object, Frequency_PerfTime...
+BatteryStaticData                   {}                   {Active, Capabilities, Caption, Chemistry...}
+BatteryRuntime                      {}                   {Active, Caption, Description, EstimatedRuntime...}
+BatteryCycleCount                   {}                   {Active, Caption, CycleCount, Description...}
+BatteryTemperature                  {}                   {Active, Caption, Description, Frequency_Object...}
+BatteryStatus                       {}                   {Active, Caption, ChargeRate, Charging...}
+BatteryFullChargedCapacity          {}                   {Active, Caption, Description, Frequency_Object...}
+MSiSCSI_MMIPSECStats                {}                   {AcquireFailures, AcquireHeapSize, Active, ActiveAcquire...}
+MSiSCSI_ConnectionStatistics        {}                   {Active, BytesReceived, BytesSent, Caption...}
+MSiSCSI_InitiatorInstanceStatistics {}                   {Active, Caption, Description, Frequency_Object...}
+ProcessorPerformance                {}                   {Active, Caption, Description, frequency...}
+Win32_PerfFormattedData             {}                   {Caption, Description, Frequency_Object, Frequency_PerfTime...
+ISCSI_Supported_LB_Policies         {}                   {iSCSI_PathCount, iSCSI_Paths, LoadBalancePolicy, UniqueSes...
+MSMonitorClass                      {}                   {}
+WmiMonitorConnectionParams          {}                   {Active, InstanceName, VideoOutputTechnology}
+WmiMonitorRawEEdidV1Block           {}                   {Active, Content, Id, InstanceName...}
+WmiMonitorListedFrequencyRanges     {}                   {Active, InstanceName, MonitorFreqRanges, NumOfMonitorFreqR...
+WmiMonitorDigitalVideoInputParams   {}                   {Active, InstanceName, IsDFP1xCompatible}
+WmiMonitorAnalogVideoInputParams    {}                   {Active, CompositeSyncSupported, InstanceName, SeparateSync...
+WmiMonitorID                        {}                   {Active, InstanceName, ManufacturerName, ProductCodeID...}
+WmiMonitorBrightnessMethods         {WmiSetBrightness... {Active, InstanceName}
+WmiMonitorBasicDisplayParams        {}                   {Active, DisplayTransferCharacteristic, InstanceName, MaxHo...
+WmiMonitorColorCharacteristics      {}                   {Active, Blue, DefaultWhite, Green...}
+WmiMonitorDescriptorMethods         {WmiGetMonitorRaw... {Active, InstanceName}
+WmiMonitorListedSupportedSourceM... {}                   {Active, InstanceName, MonitorSourceModes, NumOfMonitorSour...
+WmiMonitorBrightness                {}                   {Active, CurrentBrightness, InstanceName, Level...}
+WmiMonitorColorXYZinCIE             {}                   {X, Y}
+MS_SMHBA_PROTOCOLSTATISTICS         {}                   {ControlRequests, InputMegabytes, InputRequests, OutputMega...
+MSiSCSIInitiator_SendTargetPorta... {Refresh}            {InitiatorName, InitiatorPortNumber, LoginOptions, PortalAd...
+MSiSCSIInitiator_SessionClass       {Logout, SendScsi... {ConnectionInformation, Devices, InitiatorName, ISID...}
+MS_SMHBA_SAS_PHY                    {}                   {domainPortWWN, HardwareMaxLinkRate, HardwareMinLinkRate, N...
+MSFC_FibrePortNPIVAttributes        {}                   {Active, InstanceName, NumberVirtualPorts, VirtualPorts...}
+HBAFCPBindingEntry2                 {}                   {FCPId, Luid, ScsiId, Type}
+MSiSCSIInitiator_TargetClass        {Login}              {DiscoveryMechanism, InitiatorName, LoginOptions, Mappings...}
+MSFC_FC4STATISTICS                  {}                   {ControlRequests, InputMegabytes, InputRequests, OutputMega...
+TeeDriverWmiInfo                    {}                   {Active, AsyncEvents, D0ix, DmaEnabled...}
+MSiSCSI_QueryLBPolicy               {}                   {Active, InstanceName, LoadBalancePolicies, Reserved...}
+HDAudioErrorStatus                  {}                   {Active, ControllerErrorStatus, EngineErrorStatus, Instance...
+HBAFCPID                            {}                   {Fcid, FcpLun, NodeWWN, PortWWN}
+TeeDriverMeVersionWmiInfo           {}                   {Active, FWType, FWVer, InstanceName}
+ProcessorAcpiXpssState              {}                   {BmLatency, Control, ControlMask, Frequency...}
+MSFC_HbaApiVersion                  {}                   {Description, HbaApiVersion, WmiHbaApiVersion}
+TeeDriverAmtAdtRecPkiCertInfoWmi... {}                   {Active, InstanceName}
+TeeDriverAmtCertificateSerialsWm... {}                   {Active, InstanceName, length, value}
+MS_SMHBA_BINDINGENTRY               {}                   {LUID, PortLun, ScsiId, Status...}
+MSStorageDriver_SenseData           {}                   {additionalSenseCode, additionalSenseCodeQualifier, additio...
+ProcessorAcpiTss                    {}                   {Count, State}
+MS_SMHBA_PORTATTRIBUTES             {}                   {OSDeviceName, PortSpecificAttributes, PortSpecificAttribut...
+MSStorageDriver_ClassErrorLog       {}                   {Active, InstanceName, logEntries, numEntries}
+WmiMonitorSupportedDisplayFeatures  {}                   {ActiveOffSupported, DisplayType, GTFSupported, HasPreferre...
+ISCSI_ConnectionStaticInfo          {}                   {AuthType, CID, DataIntegrity, EstimatedThroughput...}
+AcpiPssState                        {}                   {BmLatency, Control, Frequency, Latency...}
+MSiSCSIInitiator_InitiatorClass     {}                   {InitiatorName}
+BcdDeviceData                       {}                   {AdditionalOptions, DeviceType}
+BcdDeviceFileData                   {}                   {AdditionalOptions, DeviceType, Parent, Path}
+BcdDevicePartitionData              {}                   {AdditionalOptions, DeviceType, Path}
+BcdDeviceUnknownData                {}                   {AdditionalOptions, Data, DeviceType}
+BcdDeviceQualifiedPartitionData     {}                   {AdditionalOptions, DeviceType, DiskSignature, PartitionIde...
+BcdDeviceLocateData                 {}                   {AdditionalOptions, DeviceType, Type}
+BcdDeviceLocateElementData          {}                   {AdditionalOptions, DeviceType, Element, Type}
+BcdDeviceLocateStringData           {}                   {AdditionalOptions, DeviceType, Path, Type}
+BcdDeviceLocateElementChildData     {}                   {AdditionalOptions, DeviceType, Element, Parent...}
+MSFC_FibrePortHBAAttributes         {}                   {Active, Attributes, HBAStatus, InstanceName...}
+RegisteredGuids                     {}                   {Active, EnableFlags, EnableLevel, GuidType...}
+AcpiPss                             {}                   {Count, State}
+MSVerifierIrpLogInformation         {}                   {Active, DeviceType, Entries, EntryCount...}
+MSiSCSI_SecurityCapabilities        {}                   {Active, CertificatesSupported, EncryptionAvailable, Encryp...
+PerformanceStates                   {}                   {Count, Current, State, TransitionFunction...}
+MSVerifierIrpLogEntry               {}                   {Arg1, Arg2, Arg3, Arg4...}
+ISCSI_SessionStaticInfo             {}                   {ConnectionCount, ConnectionsList, DataPduInOrder, DataSequ...
+MSiSCSIInitiator_Portal             {}                   {Address, Index, Port, SymbolicName}
+MS_SM_EventControl                  {SM_AddTarget, SM... {Active, InstanceName}
+MSiSCSIInitiator_ConnectionInfor... {}                   {CID, ConnectionID, InitiatorAddress, InitiatorPort...}
+MS_SystemInformation                {}                   {Active, BaseBoardManufacturer, BaseBoardProduct, BaseBoard...
+MSParallel                          {}                   {}
+MSParallel_AllocFreeCounts          {}                   {Active, InstanceName, PortAllocates, PortFrees}
+MSParallel_DeviceBytesTransferred   {}                   {Active, BoundedEcpReadCount, BoundedEcpWriteCount, ByteRea...
+MSAcpi                              {}                   {}
+MSAcpi_ThermalZoneTemperature       {}                   {Active, ActiveTripPoint, ActiveTripPointCount, CriticalTri...
+MSFC_DH_Chap_Parameters             {}                   {SecretEncoding, SharedSecret, SharedSecretLength}
+MSiSCSIInitiator_PersistentLogin... {}                   {InitiatorInstance, InitiatorPortNumber, IsInformationalSes...
+MS_SmBios                           {}                   {}
+MSSmBios_Sysid1394                  {}                   {x1394}
+MSSmBios_Sysid1394List              {}                   {Active, Count, InstanceName, List}
+MSSmBios_SysidUUIDList              {}                   {Active, Count, InstanceName, List}
+MSSmBios_SMBiosEventlog             {}                   {AccessMethod, AccessMethodAddress, Active, InstanceName...}
+MSSmBios_SysidUUID                  {}                   {Uuid}
+MSSmBios_RawSMBiosTables            {}                   {Active, DmiRevision, InstanceName, Size...}
+MSFC_FibrePortHBAStatistics         {}                   {Active, HBAStatus, InstanceName, Statistics...}
+MSFC_NPIVLUNMappingInformation      {}                   {Active, InstanceName, OSBus, OSLUN...}
+MSRedbook                           {}                   {}
+ISCSI_Path                          {}                   {ConnectionStatus, EstimatedLinkSpeed, PathWeight, PrimaryP...
+ISCSI_LUNList                       {}                   {OSLUN, Reserved, TargetLUN}
+BcdObject                           {EnumerateElement... {Id, StoreFilePath, Type}
