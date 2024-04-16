@@ -1,0 +1,4 @@
+Method: PyInstaller
+Target: Windows machine without Python
+
+Shell command:	pyinstaller --onefile "Battery Wear Level.py"
